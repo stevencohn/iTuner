@@ -1,0 +1,677 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iTuner</RootNamespace>
+    <AssemblyName>iTuner</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>3.0.1927.0</ExpressionBlendVersion>
+    <ApplicationIcon>Images\App\iTuner.ico</ApplicationIcon>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <Win32Resource>
+    </Win32Resource>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <StartupObject>iTuner.App</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="AboutBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AppWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\DetailPanelStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\EditBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ExceptionDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\MessageWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Options\OptionsDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Options\ScannerOptions.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Synchronizer\ExportDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\iStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ControlPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ProgressCircle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Synchronizer\DeviceSelector.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Synchronizer\ImportDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Synchronizer\SynchronizeDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TimeControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VolumeControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\VolumeSliderStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RatingControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="KeyManager\HotKeyEditor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SplashWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TaskPanel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TrackPanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TrackerWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UpgradeWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.xaml.cs">
+      <DependentUpon>AboutBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppWindow.xaml.cs">
+      <DependentUpon>AppWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ControlPanel.xaml.cs">
+      <DependentUpon>ControlPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\AssetExtension.cs" />
+    <Compile Include="Controls\DetailPanel.cs" />
+    <Compile Include="Controls\EditBlock.xaml.cs">
+      <DependentUpon>EditBlock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ExceptionDialog.xaml.cs">
+      <DependentUpon>ExceptionDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Win32\Interop.cs" />
+    <Compile Include="Win32\NotifyIconExtensions.cs" />
+    <Compile Include="Win32\WindowExtensions.cs" />
+    <Compile Include="Controls\MessageWindow.xaml.cs">
+      <DependentUpon>MessageWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Win32\Taskbar.cs">
+    </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="iTunes\Librarian\PlaylistProviders\IPlaylistReader.cs" />
+    <Compile Include="iTunes\Librarian\PlaylistProviders\M3UPlaylistReader.cs" />
+    <Compile Include="iTunes\Librarian\PlaylistProviders\WPLPlaylistReader.cs" />
+    <Compile Include="iTunes\Librarian\PlaylistProviders\PlaylistReaderBase.cs" />
+    <Compile Include="iTunes\Librarian\PlaylistProviders\PLSPlaylistReader.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\ArtworkScanner.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\InformationScanner.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\ImportPlaylistScanner.cs" />
+    <Compile Include="iTunes\LyricsEngine\Providers\AzLyricsProvider.cs" />
+    <Compile Include="iTunes\LyricsEngine\Providers\Lyrics007Provider.cs" />
+    <Compile Include="iTunes\LyricsEngine\Providers\MP3LyricsProvider.cs" />
+    <Compile Include="iTunes\Models\EncoderCollection.cs" />
+    <Compile Include="iTunes\Interaction.cs" />
+    <Compile Include="iTunes\Librarian\Catalog\ICatalog.cs" />
+    <Compile Include="iTunes\Librarian\Catalog\FlatCatalog.cs" />
+    <Compile Include="iTunes\Librarian\Catalog\TerseCatalog.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\FileWatchAction.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\FileWatchScanner.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\MaintenanceAction.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\MaintenanceScanner.cs" />
+    <Compile Include="iTunes\Models\ITrackBasics.cs" />
+    <Compile Include="iTunes\Models\ObjectID.cs" />
+    <Compile Include="iTunes\Models\ObjectIDCollection.cs" />
+    <Compile Include="iTunes\Models\PlaylistCollection.cs" />
+    <Compile Include="iTunes\Models\PlaylistKind.cs" />
+    <Compile Include="iTunes\Models\TrackFile.cs" />
+    <Compile Include="iTunes\ProtectedException.cs" />
+    <Compile Include="iTunes\Models\Source.cs" />
+    <Compile Include="iTunes\Models\TrackCollection.cs" />
+    <Compile Include="iTunes\Models\TrackKind.cs" />
+    <Compile Include="Options\IOptionsPanel.cs" />
+    <Compile Include="Options\OptionsDialog.xaml.cs">
+      <DependentUpon>OptionsDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="iTunes\IncompatibleException.cs" />
+    <Compile Include="Options\OptionsPanelBase.cs" />
+    <Compile Include="Options\ScannerOptions.xaml.cs">
+      <DependentUpon>ScannerOptions.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Synchronizer\ExportDialog.xaml.cs">
+      <DependentUpon>ExportDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FadingWindow.cs" />
+    <Compile Include="KeyManager\HotKeyActionConverter.cs" />
+    <Compile Include="Controls\IconMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\MovableWindow.cs" />
+    <Compile Include="Controls\ProgressCircle.xaml.cs">
+      <DependentUpon>ProgressCircle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RatingConverter.cs" />
+    <Compile Include="Controls\SourcesConverter.cs" />
+    <Compile Include="Synchronizer\DeviceSelector.xaml.cs">
+      <DependentUpon>DeviceSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Synchronizer\ImportDialog.xaml.cs">
+      <DependentUpon>ImportDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Synchronizer\UsbNullConverter.cs" />
+    <Compile Include="Synchronizer\UsbSpaceConverter.cs" />
+    <Compile Include="Synchronizer\SynchronizeDialog.xaml.cs">
+      <DependentUpon>SynchronizeDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TimeControl.xaml.cs">
+      <DependentUpon>TimeControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\VolumeControl.xaml.cs">
+      <DependentUpon>VolumeControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KeyManager\HotKeyEditor.xaml.cs">
+      <DependentUpon>HotKeyEditor.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="iTunes\Controller.cs" />
+    <Compile Include="iTunes\Models\Encoder.cs" />
+    <Compile Include="iTunes\Librarian\Catalog\CatalogBase.cs" />
+    <Compile Include="iTunes\Librarian\PlaylistProviders\IPlaylistWriter.cs" />
+    <Compile Include="iTunes\Librarian\PlaylistProviders\M3UPlaylistWriter.cs" />
+    <Compile Include="iTunes\Librarian\PlaylistProviders\PlaylistProviderFactory.cs" />
+    <Compile Include="iTunes\Librarian\PlaylistProviders\PlaylistWriterBase.cs" />
+    <Compile Include="iTunes\Librarian\PlaylistProviders\PLSPlaylistWriter.cs" />
+    <Compile Include="iTunes\Librarian\PlaylistProviders\WPLPlaylistWriter.cs" />
+    <Compile Include="iTunes\Librarian\PlaylistProviders\ZPLPlaylistWriter.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\EmptyScanner.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\ExportScanner.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\InitializingScanner.cs" />
+    <Compile Include="iTunes\Librarian\SafeCollection.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\ScannerBase.cs" />
+    <Compile Include="iTunes\Librarian\BlockingQueue.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\DuplicateScanner.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\IScanner.cs" />
+    <Compile Include="iTunes\Librarian\Librarian.cs" />
+    <Compile Include="iTunes\Models\ISong.cs" />
+    <Compile Include="iTunes\Models\ITrack.cs" />
+    <Compile Include="iTunes\Librarian\Scanners\PhantomScanner.cs" />
+    <Compile Include="iTunes\Librarian\ScannerState.cs" />
+    <Compile Include="iTunes\Librarian\ScanningProgress.cs" />
+    <Compile Include="iTunes\Librarian\Tagger.cs" />
+    <Compile Include="iTunes\Models\PersistentID.cs" />
+    <Compile Include="iTunes\Models\PersistentIDCollection.cs" />
+    <Compile Include="iTunes\Models\Playlist.cs" />
+    <Compile Include="TaskPanel.xaml.cs">
+      <DependentUpon>TaskPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ThirdParty\Amazon\ArtworkService.cs" />
+    <Compile Include="Tools\Logger.cs" />
+    <Compile Include="iTunes\LyricsEngine\ILyricsProvider.cs" />
+    <Compile Include="iTunes\LyricsEngine\LyricEngine.cs" />
+    <Compile Include="iTunes\LyricsEngine\LyricsProviderBase.cs" />
+    <Compile Include="iTunes\Models\Sources.cs" />
+    <Compile Include="Tools\NetworkStatus.cs" />
+    <Compile Include="Tools\NetworkStatusChangedArgs.cs" />
+    <Compile Include="iTunes\Models\Track.cs" />
+    <Compile Include="KeyManager\HotKey.cs" />
+    <Compile Include="KeyManager\HotKeyAction.cs" />
+    <Compile Include="KeyManager\HotKeyCollection.cs" />
+    <Compile Include="KeyManager\IHotKey.cs" />
+    <Compile Include="KeyManager\KeyTrapper.cs" />
+    <Compile Include="KeyManager\KeyManager.cs" />
+    <Compile Include="KeyManager\KeyModifier.cs" />
+    <Compile Include="SplashWindow.xaml.cs">
+      <DependentUpon>SplashWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Controls\RatingControl.xaml.cs">
+      <DependentUpon>RatingControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SmartException.cs" />
+    <Compile Include="Tools\PathHelper.cs" />
+    <Compile Include="ThirdParty\Amazon\SignedRequestHelper.cs" />
+    <Compile Include="Tools\StringExtensions.cs" />
+    <Compile Include="Tools\TextFileWriter.cs" />
+    <Compile Include="Win32\SystemTray.cs" />
+    <Compile Include="Tools\UpgradeHelper.cs" />
+    <Compile Include="Tools\UpgradeRelease.cs" />
+    <Compile Include="Tools\HttpUtility.cs" />
+    <Compile Include="Tools\UsbDisk.cs" />
+    <Compile Include="Tools\UsbDiskCollection.cs" />
+    <Compile Include="Tools\UsbManager.cs" />
+    <Compile Include="Tools\UsbStateChange.cs" />
+    <Compile Include="Tools\UsbStateChangedEventArgs.cs" />
+    <Compile Include="Tools\WmiExtensions.cs" />
+    <Compile Include="TrackPanel.xaml.cs">
+      <DependentUpon>TrackPanel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TrackerWindow.xaml.cs">
+      <DependentUpon>TrackerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UpgradeWindow.xaml.cs">
+      <DependentUpon>UpgradeWindow.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.de-DE.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.en-029.resx" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Images\App\iTuner.pdn" />
+    <None Include="Images\Tasks\Keyboard64t.pdn" />
+    <None Include="Images\Lyrics\LyricsOff1.pdn" />
+    <None Include="Images\Lyrics\LyricsOff2.pdn" />
+    <None Include="Images\Lyrics\LyricsOff3.pdn" />
+    <None Include="Images\Lyrics\LyricsOff4.pdn" />
+    <None Include="Images\Lyrics\LyricsOff5.pdn" />
+    <None Include="Images\Menu\Import.pdn" />
+    <None Include="iTunes\Librarian\Librarian.cd" />
+    <None Include="iTunes\LyricsEngine\LyricsEngine.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\VolMax.png" />
+    <Resource Include="Images\VolMin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Starlight.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Pause.ico" />
+    <Resource Include="Images\Play.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Tasks\Keyboard64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Tasks\iTunesLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Tasks\iTunesLogo-Original.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Tasks\Keyboard64t.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Menu\NextTrack.ico" />
+    <Resource Include="Images\Menu\PrevTrack.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Tasks\iTunes.ico" />
+    <Resource Include="Images\Tasks\Shuffle.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Mute.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\App\iTuner.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Tasks\Shuffle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Lyrics\LyricsOn.png" />
+    <Resource Include="Images\note16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Lyrics\LyricsOff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Tasks\Shuffle - Dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Tasks\ShuffleOn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Lyrics\LyricsOff1.png" />
+    <Resource Include="Images\Lyrics\LyricsOff2.png" />
+    <Resource Include="Images\Lyrics\LyricsOff3.png" />
+    <Resource Include="Images\Lyrics\LyricsOff4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Lyrics\LyricsOff5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sources\SourceCD.png" />
+    <Resource Include="Images\Sources\SourceMovie.png" />
+    <Resource Include="Images\Sources\SourcePodcast.png" />
+    <Resource Include="Images\Sources\SourceRadio.png" />
+    <Resource Include="Images\Sources\SourceStore.png" />
+    <Resource Include="Images\Sources\SourceTVShow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Sources\SourceMusic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\App\Uninstall.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ThirdParty\Amazon\Artwork.xml" />
+    <Resource Include="Images\App\iTuner-48.png" />
+    <Resource Include="Images\Tasks\iTunes16.ico" />
+    <Resource Include="Images\App\iTuner16.ico" />
+    <Resource Include="Images\Menu\ID3.ico" />
+    <Resource Include="Images\App\iTuner.png" />
+    <Resource Include="Images\Menu\Track.ico" />
+    <Content Include="ThirdParty\taglib-sharp.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Images\Library.ico" />
+    <Resource Include="Images\Library.png" />
+    <Resource Include="Images\Buttons\Donate.png" />
+    <None Include="Images\Menu\Duplicates.pdn" />
+    <None Include="Images\Menu\Export.pdn" />
+    <None Include="Images\Menu\Phantom.pdn" />
+    <None Include="iTuner.exe.config" />
+    <None Include="iTunes\Librarian\Tagger.xml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KeyManager\KeyManager.cd" />
+    <Resource Include="Images\Menu\Duplicates.png" />
+    <Resource Include="Images\Menu\EmptyDirectory.jpg" />
+    <Resource Include="Images\Menu\EmptyDirectory.png" />
+    <Resource Include="Images\Menu\Phantom.png" />
+    <Resource Include="Images\Menu\Duplicates.ico" />
+    <Resource Include="Images\Menu\EmptyDirectory.ico" />
+    <Resource Include="Images\Menu\Phantom.ico" />
+    <Resource Include="Images\Menu\Export.ico" />
+    <Resource Include="Images\Menu\Export.png" />
+    <Resource Include="Images\Menu\Playlist.ico" />
+    <Resource Include="Images\Menu\Artist.ico" />
+    <Resource Include="Images\Menu\Album.ico" />
+    <Resource Include="Images\Menu\Sync.ico" />
+    <Resource Include="Images\MessageBox\Error.png" />
+    <Resource Include="Images\MessageBox\Information.png" />
+    <Resource Include="Images\MessageBox\OK.png" />
+    <Resource Include="Images\MessageBox\Question.png" />
+    <Resource Include="Images\MessageBox\Stop.png" />
+    <Resource Include="Images\MessageBox\Warning.png" />
+    <Resource Include="Images\Playlists\PlaylistFolder.png" />
+    <Resource Include="Images\Playlists\PlaylistUser.png" />
+    <Resource Include="Images\Playlists\PlaylistPurchased.png" />
+    <Resource Include="Images\Playlists\PlaylistSmart.png" />
+    <Resource Include="License.txt" />
+    <None Include="Properties\I_FolderFormats.xml" />
+    <Resource Include="Images\PauseActive.ico" />
+    <Resource Include="Images\PlayActive.ico" />
+    <Resource Include="Images\Menu\Import.ico" />
+    <Resource Include="Images\Menu\Import.png" />
+    <Resource Include="Images\Buttons\Donate-de.png" />
+    <Resource Include="Images\Buttons\Donate-es.png" />
+    <Resource Include="Images\Buttons\Donate-fr.png" />
+    <Resource Include="Images\Buttons\Donate-he.png" />
+    <Resource Include="Images\Buttons\Donate-it.png" />
+    <Resource Include="Images\Buttons\Donate-ja.png" />
+    <Resource Include="Images\Buttons\Donate-pt.png" />
+    <Resource Include="Images\Buttons\Donate-zh.png" />
+    <Resource Include="Images\Donate.png" />
+    <Content Include="ThirdParty\AACTagReader.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdParty\genpuid.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdParty\libexpat.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ThirdParty\mipcore.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="iTunesLib">
+      <Guid>{9E93C96F-CF0D-43F6-8BA8-B807A3370712}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>13</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PreBuildEvent>"$(SolutionDir)\iTunerPseudolator\bin\Debug\iTunerPseudolator" "$(ProjectDir)\Properties\Resources.resx"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

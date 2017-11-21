@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApplicationTitle" xml:space="preserve">
+    <value>iTuner</value>
+    <comment>Name of the application</comment>
+  </data>
+  <data name="ApplicationCompany" xml:space="preserve">
+    <value>River Software</value>
+    <comment>Installation property</comment>
+  </data>
+  <data name="FilenameHotkeys" xml:space="preserve">
+    <value>iTuner_Keys.xml</value>
+    <comment>Deployment</comment>
+  </data>
+  <data name="ApplicationProduct" xml:space="preserve">
+    <value>iTuner</value>
+    <comment>Installation property</comment>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>(unknown)</value>
+    <comment>tag marking unknown field values</comment>
+  </data>
+  <data name="VersionFormat" xml:space="preserve">
+    <value>{0} v{1}.{2}.{3}</value>
+    <comment>About box version title string format</comment>
+  </data>
+  <data name="I_SingletonID" xml:space="preserve">
+    <value>{36521039-4D94-40bd-9E7C-EBFB8B34ECE5}</value>
+    <comment>Invariant, iTuner singleton window ID</comment>
+  </data>
+  <data name="SingletonMessage" xml:space="preserve">
+    <value>{0} is already running</value>
+    <comment>Message shown when other instance is already running</comment>
+  </data>
+  <data name="ActionMute" xml:space="preserve">
+    <value>Mute</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionNextTrack" xml:space="preserve">
+    <value>Next Track</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionPlayPause" xml:space="preserve">
+    <value>Play/Pause</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionPrevTrack" xml:space="preserve">
+    <value>Previous Track</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionShowiTuner" xml:space="preserve">
+    <value>Show iTuner</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionShowiTunes" xml:space="preserve">
+    <value>Show iTunes</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionVolumeDown" xml:space="preserve">
+    <value>Volume Down</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionVolumeUp" xml:space="preserve">
+    <value>Volume Up</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="iTunesMissing" xml:space="preserve">
+    <value>iTunes is not installed on this computer.</value>
+    <comment>iTunes missing notification</comment>
+  </data>
+  <data name="VolumeSettingFormat" xml:space="preserve">
+    <value>Volume ({0})</value>
+    <comment>Volume slider tooltip</comment>
+  </data>
+  <data name="LyricsAlbumLine" xml:space="preserve">
+    <value>Album...: {0} ({1})</value>
+    <comment>Album line of lyrics text file</comment>
+  </data>
+  <data name="LyricsArtistLine" xml:space="preserve">
+    <value>Artist..: {0}</value>
+    <comment>Artist line of lyrics text file</comment>
+  </data>
+  <data name="LyricsRatingLine" xml:space="preserve">
+    <value>Rating..: {0}</value>
+    <comment>Rating line of lyrics text file</comment>
+  </data>
+  <data name="LyricsTitleLine" xml:space="preserve">
+    <value>Title...: {0} ({1})</value>
+    <comment>Title line of lyrics text file</comment>
+  </data>
+  <data name="ArchiveRootPath" xml:space="preserve">
+    <value>_iTunerArchive</value>
+    <comment>Library archive root directory</comment>
+  </data>
+  <data name="I_ScanDuplicates" xml:space="preserve">
+    <value>DupScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="I_ScanEmptyDirectories" xml:space="preserve">
+    <value>EmptyScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="I_ScanPhantoms" xml:space="preserve">
+    <value>DeadScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="MenuAbout" xml:space="preserve">
+    <value>About</value>
+    <comment>Context menu item, about box</comment>
+  </data>
+  <data name="MenuExit" xml:space="preserve">
+    <value>Exit</value>
+    <comment>Context menu item, exit iTuner</comment>
+  </data>
+  <data name="MenuExitiTunes" xml:space="preserve">
+    <value>Exit iTunes</value>
+    <comment>Context menu item, exit iTuner and iTunes</comment>
+  </data>
+  <data name="MenuShuffle" xml:space="preserve">
+    <value>Shuffle</value>
+    <comment>Context menu item, toggle shuffle</comment>
+  </data>
+  <data name="PayPalDonateUri" xml:space="preserve">
+    <value>https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=6UC9PK9LA92F8&amp;lc=US&amp;item_name=Help%20Support%20iTuner&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted</value>
+    <comment>Invariant, PayPal donation URI</comment>
+  </data>
+  <data name="iTunesLibrary" xml:space="preserve">
+    <value>Library</value>
+    <comment>Source main Library name</comment>
+  </data>
+  <data name="iTunesMusicPlaylist" xml:space="preserve">
+    <value>Music</value>
+    <comment>Music Playlist name</comment>
+  </data>
+  <data name="ApplicationURI" xml:space="preserve">
+    <value>http://ituner.codeplex.com</value>
+    <comment>iTuner Web site</comment>
+  </data>
+  <data name="iTunesAutoDirectory" xml:space="preserve">
+    <value>Automatically Add to iTunes</value>
+    <comment>Auto-drop directory</comment>
+  </data>
+  <data name="MenuClean" xml:space="preserve">
+    <value>Clean</value>
+    <comment>Context menu item, clean sub-menu</comment>
+  </data>
+  <data name="MenuCleanAlbum" xml:space="preserve">
+    <value>Clean album</value>
+    <comment>Context menu item, full clean of current album</comment>
+  </data>
+  <data name="MenuCleanDuplicates" xml:space="preserve">
+    <value>Duplicates</value>
+    <comment>Context menu item, remove duplicates</comment>
+  </data>
+  <data name="MenuCleanEmpty" xml:space="preserve">
+    <value>Empty directories</value>
+    <comment>Context menu item, remove empty directories</comment>
+  </data>
+  <data name="MenuCleanPhantoms" xml:space="preserve">
+    <value>Dead tracks</value>
+    <comment>Context menu item, remove dead tracks</comment>
+  </data>
+  <data name="MenuCleanPlaylist" xml:space="preserve">
+    <value>Clean playlist</value>
+    <comment>Context menu item, clean current playlist</comment>
+  </data>
+  <data name="I_ScanContextDuplicates" xml:space="preserve">
+    <value>CtxDupScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="I_ScanContextPhantoms" xml:space="preserve">
+    <value>CtxPhanScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="FilenameAppLog" xml:space="preserve">
+    <value>iTuner.log</value>
+    <comment>Deployment</comment>
+  </data>
+  <data name="I_ScanExport" xml:space="preserve">
+    <value>ExportScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="Bytes" xml:space="preserve">
+    <value>bytes</value>
+    <comment>Bytes</comment>
+  </data>
+  <data name="MenuExport" xml:space="preserve">
+    <value>Export</value>
+    <comment>Context menu item, export or sync</comment>
+  </data>
+  <data name="MenuExportAlbum" xml:space="preserve">
+    <value>Album...</value>
+    <comment>Context menu item, current album</comment>
+  </data>
+  <data name="MenuExportArtist" xml:space="preserve">
+    <value>Artist...</value>
+    <comment>Context menu item, current artist</comment>
+  </data>
+  <data name="MenuExportPlaylist" xml:space="preserve">
+    <value>Playlist...</value>
+    <comment>Context menu item, current playlist</comment>
+  </data>
+  <data name="MenuNextTrack" xml:space="preserve">
+    <value>Next Track</value>
+    <comment>Context menu item, move to next track</comment>
+  </data>
+  <data name="MenuPrevTrack" xml:space="preserve">
+    <value>Prev Track</value>
+    <comment>Context menu item, move to previous track</comment>
+  </data>
+  <data name="MenuSync" xml:space="preserve">
+    <value>Sync MP3 player...</value>
+    <comment>Context menu item, sync MP3 player</comment>
+  </data>
+  <data name="UsbDescription" xml:space="preserve">
+    <value>{0} {1} ({2})</value>
+    <comment>drive name (model)</comment>
+  </data>
+  <data name="FreeSpace" xml:space="preserve">
+    <value>{0} free of {1}</value>
+    <comment>free space description (x of y)</comment>
+  </data>
+  <data name="FreeBytes" xml:space="preserve">
+    <value>{0} Bytes</value>
+    <comment>free space Bytes</comment>
+  </data>
+  <data name="FreeGB" xml:space="preserve">
+    <value>{0} GB</value>
+    <comment>free space GB</comment>
+  </data>
+  <data name="FreeKB" xml:space="preserve">
+    <value>{0} KB</value>
+    <comment>free space KB</comment>
+  </data>
+  <data name="FreeMB" xml:space="preserve">
+    <value>{0} MB</value>
+    <comment>free space MB</comment>
+  </data>
+  <data name="UsbLongDescription" xml:space="preserve">
+    <value>{0} {1} ({2}) {3}</value>
+    <comment>drive name (model) FreeSpace</comment>
+  </data>
+  <data name="iTunesGeniusPlaylist" xml:space="preserve">
+    <value>Genius</value>
+    <comment>Genius Playlist name</comment>
+  </data>
+  <data name="I_ScanInitialize" xml:space="preserve">
+    <value>InitScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Completed</value>
+    <comment>Completed task notification</comment>
+  </data>
+  <data name="SyncCancelCaption" xml:space="preserve">
+    <value>Cancel Synchronization</value>
+    <comment>Cancel dialog caption</comment>
+  </data>
+  <data name="SyncCancelText" xml:space="preserve">
+    <value>Synchronization is in progress.
+Are you sure you want to cancel?</value>
+    <comment>Cancel dialog text</comment>
+  </data>
+  <data name="SyncWarningCaption" xml:space="preserve">
+    <value>Warning</value>
+    <comment>Synchronize warning dialog caption</comment>
+  </data>
+  <data name="SyncWarningText" xml:space="preserve">
+    <value>This will delete all files on the USB device under {0} that are not part of the selected playlists.
+
+Click OK to confirm and continue...</value>
+    <comment>Synchronize warning dialog text</comment>
+  </data>
+  <data name="TrackCountSingular" xml:space="preserve">
+    <value>Selected {0} track</value>
+    <comment>Sync dialog, count of selected tracks (1)</comment>
+  </data>
+  <data name="TrackCountPlural" xml:space="preserve">
+    <value>Selected {0} tracks</value>
+    <comment>Sync dialog, count of selected tracks ( &gt; 1)</comment>
+  </data>
+  <data name="ScanAlbumDups" xml:space="preserve">
+    <value>Album Dups</value>
+    <comment>Tasklist album duplicate scanner</comment>
+  </data>
+  <data name="ScanAlbumPhantoms" xml:space="preserve">
+    <value>Album Dead</value>
+    <comment>Tasklist album dead track scanner</comment>
+  </data>
+  <data name="ScanDuplicates" xml:space="preserve">
+    <value>Dup Scanner</value>
+    <comment>Tasklist duplicate scanner</comment>
+  </data>
+  <data name="ScanEmpty" xml:space="preserve">
+    <value>Empty Scanner</value>
+    <comment>Tasklist empty dir scanner</comment>
+  </data>
+  <data name="ScanExport" xml:space="preserve">
+    <value>Exporter</value>
+    <comment>Tasklist exporter</comment>
+  </data>
+  <data name="ScanPhantoms" xml:space="preserve">
+    <value>Dead Scanner</value>
+    <comment>Tasklist dead track scanner</comment>
+  </data>
+  <data name="ScanSynchronize" xml:space="preserve">
+    <value>Synchronizer</value>
+    <comment>Tasklist synchronizer</comment>
+  </data>
+  <data name="I_ReleaseHtmFormat" xml:space="preserve">
+    <value>&lt;html&gt;&lt;header&gt;&lt;style&gt;BODY {{font-family:Calibri;font-size:10pt;background:#E2E2C1;margin:0 4 0 4;}}&lt;/style&gt;&lt;/header&gt;&lt;body&gt;{0}&lt;/body&gt;&lt;/html&gt;</value>
+    <comment>Invariant, release upgrade Web browser HTML</comment>
+  </data>
+  <data name="NoUpgrades" xml:space="preserve">
+    <value>You are running the most recent version of iTuner</value>
+    <comment>No upgrade notice</comment>
+  </data>
+  <data name="NoUpdateConnection" xml:space="preserve">
+    <value>Cannot connect to codeplex at this time.  Please try again later.</value>
+    <comment>No upgrade notice, error</comment>
+  </data>
+  <data name="I_ScanMaintenance" xml:space="preserve">
+    <value>MaintScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="ScanInitialize" xml:space="preserve">
+    <value>Initialize</value>
+    <comment>Tasklist initialization scanner</comment>
+  </data>
+  <data name="ScanMaintenance" xml:space="preserve">
+    <value>Maintain DB</value>
+    <comment>Tasklist maintenance scanner</comment>
+  </data>
+  <data name="I_ScanFileWatch" xml:space="preserve">
+    <value>WatchScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="ScanFileWatch" xml:space="preserve">
+    <value>Watch Scanner</value>
+    <comment>Tasklist file watch scanner</comment>
+  </data>
+  <data name="I_iTunesDttmFormat" xml:space="preserve">
+    <value>yyyy-MM-ddThh:mm:ssZ</value>
+    <comment>iTunes Library UTC date/time format</comment>
+  </data>
+  <data name="NoBrowserCaption" xml:space="preserve">
+    <value>Error opening URL</value>
+    <comment>No internet browsre installed</comment>
+  </data>
+  <data name="NoBrowserMessage" xml:space="preserve">
+    <value>Internet browser not detected.  How do you survive?</value>
+    <comment>No internet browser installed</comment>
+  </data>
+  <data name="HotKeyNotRegistered" xml:space="preserve">
+    <value>Could not register {0} hot key [{1}].  {0} sequence set to None.</value>
+    <comment>Unable to register hotkey</comment>
+  </data>
+  <data name="HotKeyNotUnregistered" xml:space="preserve">
+    <value>Could not unregister {0} hot key [{1}]</value>
+    <comment>Unable to unregister hotkey</comment>
+  </data>
+  <data name="HotKeysNotSaved" xml:space="preserve">
+    <value>Error saving hot keys: {0}</value>
+    <comment>Error saving hot keys</comment>
+  </data>
+  <data name="PlaylistMovies" xml:space="preserve">
+    <value>Movies</value>
+    <comment>Playlist name, Movies</comment>
+  </data>
+  <data name="PlaylistPodcasts" xml:space="preserve">
+    <value>Podcasts</value>
+    <comment>Playlist name, Podcasts</comment>
+  </data>
+  <data name="PlaylistRadio" xml:space="preserve">
+    <value>Radio</value>
+    <comment>Playlist name, Radio</comment>
+  </data>
+  <data name="PlaylistStore" xml:space="preserve">
+    <value>iTunes Store</value>
+    <comment>Playlist name, iTunes Store</comment>
+  </data>
+  <data name="PlaylistTVShows" xml:space="preserve">
+    <value>TV Shows</value>
+    <comment>Playlist name, TV Shows</comment>
+  </data>
+</root>

@@ -1,0 +1,102 @@
+﻿<Window
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:iTuner"
+  xmlns:controls="clr-namespace:iTuner.Controls"
+  xmlns:resx="clr-namespace:iTuner.Properties"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  x:Class="iTuner.UpgradeWindow"
+  x:ClassModifier="internal"
+  x:Name="Window"
+  Title="Upgrade iTuner"
+  Width="500" Height="400" WindowStyle="ToolWindow" mc:Ignorable="d" Topmost="True"
+  ShowInTaskbar="True" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+  
+  <!--
+  ************************************************************************************
+  The Win32 WebBrowser control cannot be hosted on a Transparent window or it will be
+  rendered transparent itself. So we need to keep this as a ToolWindow...
+  ************************************************************************************
+  -->
+
+  <Window.Resources>
+    <SolidColorBrush x:Key="DisabledForeground" Color="#FF757575"/>
+    <Style TargetType="TextBlock">
+      <Setter Property="FontSize" Value="12"/>
+      <Setter Property="FontFamily" Value="Calibri"/>
+      <Setter Property="Margin" Value="0,0,5,0"/>
+      <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+  </Window.Resources>
+
+  <Border Background="{StaticResource iTunesBackground}">
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+      </Grid.RowDefinitions>
+
+      <local:DetailPanel Margin="5,5,5,12">
+        <TextBlock
+          x:Name="titleBlock" Margin="6" TextWrapping="Wrap"
+          Text="{x:Static resx:Resources.UpgradeWindow_Directions}"/>
+      </local:DetailPanel>
+
+      <Grid Grid.Row="1" Margin="50,0,10,0" HorizontalAlignment="Left">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto" />
+          <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition />
+          <ColumnDefinition />
+          <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock
+          Text="Current version:" HorizontalAlignment="Right" FontWeight="Bold" Margin="0,0,8,0" />
+        <TextBlock
+          x:Name="currentVersionBox" Text="{Binding CurrentVersion}" Grid.Column="1" Margin="0,0,40,0" />
+        <TextBlock
+          x:Name="currentDateBox"
+          Text="{Binding CurrentDate}" Grid.Column="2"
+          Foreground="{StaticResource DisabledForeground}" />
+
+        <TextBlock
+          Text="New version:" Grid.Row="1" HorizontalAlignment="Right" FontWeight="Bold" Margin="0,2,10,0" />
+        <TextBlock
+          x:Name="recentVersionBox" Text="{Binding ReleaseVersion}" Grid.Row="1" Grid.Column="1" Margin="0,2,0,0" />
+        <TextBlock
+          x:Name="recentDateBox"
+          Text="{Binding ReleaseDate}" Grid.Row="1" Grid.Column="2"
+          Foreground="{StaticResource DisabledForeground}" Margin="0,2,0,0" />
+      </Grid>
+
+      <DockPanel Grid.Row="2" Margin="10,14,10,8" LastChildFill="True">
+        <TextBlock
+          Text="{x:Static resx:Resources.UpgradeWindow_ReleaseNotes}"
+          Foreground="{StaticResource DisabledForeground}" DockPanel.Dock="Top" />
+        <WebBrowser x:Name="notesBox" Margin="0,3,0,0" />
+      </DockPanel>
+
+      <DockPanel x:Name="Step1Panel" Grid.Row="3" LastChildFill="False" Margin="0,0,0,10">
+        <Button
+          DockPanel.Dock="Right" Padding="15,0,15,0" Margin="0,0,10,0"
+          Click="DoCancel" IsCancel="True" Style="{StaticResource iButtonStyle}">
+          <TextBlock Margin="10,0,10,0" Text="{x:Static resx:Resources.CancelButton}"/>
+        </Button>
+        <Button
+          x:Name="okButton"
+          DockPanel.Dock="Right" Margin="0,0,6,0"
+          Click="DoUpgrade" IsDefault="True" Style="{StaticResource iButtonStyle}">
+          <TextBlock Padding="10,0,10,0" Text="{x:Static resx:Resources.UpgradeWindow_Visit}"/>
+        </Button>
+      </DockPanel>
+
+    </Grid>
+  </Border>
+
+</Window>

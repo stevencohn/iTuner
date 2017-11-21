@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="iTuner.iTunes.DuplicateScanner" Collapsed="true">
+    <Position X="3.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAIAAAAAQAAgAAAIIAAAAABABAAAAAAIAAAAA=</HashCode>
+      <FileName>iTunes\Librarian\DuplicateScanner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iTuner.iTunes.EmptyScanner" Collapsed="true">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAACAAAAAAAAQABAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>iTunes\Librarian\EmptyScanner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iTuner.iTunes.PhantomScanner" Collapsed="true">
+    <Position X="2.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAQAAgAAAIIAAAAAAABAAgAAAIAAAAA=</HashCode>
+      <FileName>iTunes\Librarian\PhantomScanner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iTuner.iTunes.ScannerBase" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAACAQAgAQAQIAAEBDBQAgAAEAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>iTunes\Librarian\ScannerBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="iTuner.iTunes.ExportScanner" Collapsed="true">
+    <Position X="2" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAARAAAAAAAAKAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>iTunes\Librarian\ExportScanner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iTuner.iTunes.InitializingScanner" Collapsed="true">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>iTunes\Librarian\InitializingScanner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="iTuner.iTunes.IScanner">
+    <Position X="4.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAQAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>iTunes\Librarian\IScanner.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

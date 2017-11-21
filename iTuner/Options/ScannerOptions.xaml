@@ -1,0 +1,93 @@
+﻿<local:OptionsPanelBase
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:iTuner"
+  xmlns:resx="clr-namespace:iTuner.Properties"
+  mc:Ignorable="d"
+  x:Class="iTuner.ScannerOptions"
+  x:ClassModifier="internal"
+  x:Name="UserControl"
+  d:DesignWidth="550" d:DesignHeight="200">
+
+  <UserControl.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="..\Controls\iStyles.xaml"/>
+      </ResourceDictionary.MergedDictionaries>
+
+      <Style x:Key="AreaBorder" TargetType="{x:Type Border}">
+        <Setter Property="CornerRadius" Value="3" />
+        <Setter Property="Padding" Value="4" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="BorderBrush" Value="Transparent" />
+        <Style.Triggers>
+          <Trigger Property="IsMouseOver" Value="True">
+            <Setter Property="BorderBrush" Value="{StaticResource fnButtonStroke}" />
+            <Setter Property="Background" Value="{StaticResource fnButtonFill}" />
+          </Trigger>
+        </Style.Triggers>
+      </Style>
+    </ResourceDictionary>
+  </UserControl.Resources>
+
+  <StackPanel Orientation="Vertical" x:Name="LayoutRoot">
+
+    <TextBlock
+      TextWrapping="Wrap" Margin="0,0,0,10"
+      Text="{x:Static resx:Resources.ScannerOptions_Description}"/>
+
+    <StackPanel Orientation="Vertical" Margin="6,0,0,0">
+      <Border Style="{DynamicResource AreaBorder}">
+        <CheckBox IsChecked="{Binding ArtworkScannerIsEnabled}">
+          <TextBlock TextWrapping="Wrap">
+            <Bold>
+              <Run Text="{x:Static resx:Resources.ScannerOptions_ArtworkTitle}"/>
+            </Bold> -
+            <Run Text="{x:Static resx:Resources.ScannerOptions_Artwork}"/>
+          </TextBlock>
+        </CheckBox>
+      </Border>
+      <Border Style="{DynamicResource AreaBorder}">
+        <CheckBox IsChecked="{Binding DuplicateScannerIsEnabled}">
+          <TextBlock TextWrapping="Wrap">
+            <Bold>
+              <Run Text="{x:Static resx:Resources.ScannerOptions_ArchiveTitle}"/>
+            </Bold> -
+            <Run Text="{x:Static resx:Resources.ScannerOptions_Archive}"/>
+          </TextBlock>
+        </CheckBox>
+      </Border>
+      <Border Style="{DynamicResource AreaBorder}">
+        <CheckBox IsChecked="{Binding PhantomScannerIsEnabled}">
+          <TextBlock TextWrapping="Wrap">
+            <Bold>
+              <Run Text="{x:Static resx:Resources.ScannerOptions_PhantomTitle}"/>
+            </Bold> -
+            <Run Text="{x:Static resx:Resources.ScannerOptions_Phantom}"/>
+          </TextBlock>
+        </CheckBox>
+      </Border>
+      <Border Style="{DynamicResource AreaBorder}">
+        <CheckBox IsChecked="{Binding FileWatchScannerIsEnabled}">
+          <TextBlock TextWrapping="Wrap">
+            <Bold>
+              <Run Text="{x:Static resx:Resources.ScannerOptions_WatchTitle}"/>
+            </Bold> -
+            <Run Text="{x:Static resx:Resources.ScannerOptions_Watch}"/>
+          </TextBlock>
+        </CheckBox>
+      </Border>
+      <!--Border CornerRadius="3" Padding="4" BorderThickness="1" BorderBrush="Transparent">
+        <CheckBox IsChecked="{Binding MaintenanceScannerIsEnabled}" Margin="0,10,0,0">
+          <TextBlock TextWrapping="Wrap">
+            <Bold>Synchronize Catalog</Bold> - monitor changes made to iTunes playlists and synchronize those
+            changes with the internal iTuner catalog.
+          </TextBlock>
+        </CheckBox>
+      </Border-->
+    </StackPanel>
+
+  </StackPanel>
+</local:OptionsPanelBase>

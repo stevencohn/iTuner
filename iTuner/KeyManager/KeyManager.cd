@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="iTuner.KeyManager">
+    <Position X="1.25" Y="1" Width="1.75" />
+    <Members>
+      <Field Name="dataPath" Hidden="true" />
+      <Method Name="Dispose" Hidden="true" />
+      <Method Name="DoKeyPressed" Hidden="true" />
+      <Field Name="isDisposed" Hidden="true" />
+      <Property Name="IsEnabled" Hidden="true" />
+      <Method Name="KeyManager" Hidden="true" />
+      <Property Name="KeyMap" Hidden="true" />
+      <Field Name="keys" Hidden="true" />
+      <Method Name="Load" Hidden="true" />
+      <Field Name="MaxHotID" Hidden="true" />
+      <Method Name="RegisterHotKey" Hidden="true" />
+      <Method Name="Save" Hidden="true" />
+      <Method Name="UnregisterHotKey" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Field Name="window" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="iTuner.KeyManager.HKEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>KeyManager\KeyManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="iTuner.KeyManager.HKEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>KeyManager\KeyManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="iTuner.KeyManager.DriverWindow">
+        <Members>
+          <Method Name="Dispose" Hidden="true" />
+          <Method Name="DriverWindow" Hidden="true" />
+          <Field Name="WM_HOTKEY" Hidden="true" />
+        </Members>
+        <TypeIdentifier>
+          <NewMemberFileName>KeyManager\KeyManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="iTuner.KeyManager.KeyInterops" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>KeyManager\KeyManager.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAgIAAACAIAAAQEQEAAAAAEAEAAAAIAQAAAABACAA=</HashCode>
+      <FileName>KeyManager\KeyManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="iTuner.HotKey">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <Members>
+      <Field Name="counter" Hidden="true" />
+      <Property Name="HotID" Hidden="true" />
+      <Method Name="HotKey" Hidden="true" />
+      <Method Name="MakeString" Hidden="true" />
+      <Method Name="OnPropertyChanged" Hidden="true" />
+      <Event Name="PropertyChanged" Hidden="true" />
+      <Property Name="Sequence" Hidden="true" />
+      <Method Name="SetSequence" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAQEIAAgAAAEgAAAAAEAABAAAAEAAAQ=</HashCode>
+      <FileName>KeyManager\HotKey.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="iTuner.KeyModifier">
+    <Position X="3.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAAAoAAAAEAAAA=</HashCode>
+      <FileName>KeyManager\KeyModifier.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="iTuner.HotKeyAction">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAQAACAACAAAAAAQAEAAABAAgAAEAAAA=</HashCode>
+      <FileName>KeyManager\HotKeyAction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
