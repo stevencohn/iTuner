@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Formats>
+  <format FID="R_L_T" pattern="{artist}\{album}\{title}"/>
+  <format FID="R_LT" pattern="{artist}\{album} - {title}"/>
+  <format FID="RLT" pattern="{artist} - {album} - {title}"/>
+  <format FID="R_T" pattern="{artist}\{title}"/>
+  <format FID="L_R_T" pattern="{album}\{artist}\{title}"/>
+  <format FID="L_RT" pattern="{album}\{artist} - {title}"/>
+  <format FID="L_T" pattern="{album}\{title}"/>
+  <format FID="G_R_T" pattern="{genre}\{artist}\{title}"/>
+  <format FID="G_RT" pattern="{genre}\{artist} - {title}"/>
+  <format FID="P_L_R_T" pattern="{playlist}\{album}\{artist}\{title}"/>
+  <format FID="P_L_RT" pattern="{playlist}\{album}\{artist} - {title}"/>
+  <format FID="P_R_L_T" pattern="{playlist}\{artist}\{album}\{title}"/>
+  <format FID="P_R_LT" pattern="{playlist}\{artist}\{album} - {title}"/>
+</Formats>

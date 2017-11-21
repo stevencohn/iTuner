@@ -1,0 +1,86 @@
+﻿<ResourceDictionary
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:iTuner">
+
+  <LinearGradientBrush x:Key="TopGlossFill" StartPoint="0,0" EndPoint="0,1">
+    <GradientStop Color="#FFDCDCC0" Offset="0.748" />
+    <GradientStop Color="#FFD9DCB1" Offset="0.089" />
+  </LinearGradientBrush>
+  <LinearGradientBrush x:Key="BottomGlossFill" StartPoint="0,0" EndPoint="0,1">
+    <GradientStop Color="#FFCCD4A4" Offset="0.296" />
+    <GradientStop Color="#FFE2E2C1" Offset="0.904" />
+  </LinearGradientBrush>
+  <LinearGradientBrush x:Key="OuterStroke" StartPoint="0,0" EndPoint="0,1">
+    <GradientStop Color="#FFDEE4C1" Offset="1" />
+    <GradientStop Color="#FF555846" Offset="0.348" />
+  </LinearGradientBrush>
+  <LinearGradientBrush x:Key="InnerStroke" StartPoint="0,0" EndPoint="0,1">
+    <GradientStop Color="#FFC8CEAA" Offset="0" />
+    <GradientStop Color="#FF555846" Offset="1" />
+  </LinearGradientBrush>
+
+  <Style x:Key="InnerStrokeStyle" TargetType="{x:Type Rectangle}">
+    <Setter Property="Fill" Value="#FFE8ECC2" />
+    <Setter Property="RadiusX" Value="3" />
+    <Setter Property="RadiusY" Value="3" />
+    <Setter Property="Stroke" Value="{StaticResource InnerStroke}" />
+    <Setter Property="StrokeThickness" Value="0.7" />
+  </Style>
+
+  <Style x:Key="TopGlossStyle" TargetType="{x:Type Rectangle}">
+    <Setter Property="Fill" Value="{StaticResource TopGlossFill}" />
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="Margin" Value="1.5,0,1.5,0" />
+    <Setter Property="SnapsToDevicePixels" Value="True" />
+    <Setter Property="Stroke" Value="{x:Null}" />
+    <Setter Property="StrokeThickness" Value="0.0" />
+    <Setter Property="RadiusX" Value="3" />
+    <Setter Property="RadiusY" Value="3" />
+    <Setter Property="VerticalAlignment" Value="Top" />
+  </Style>
+
+  <Style x:Key="BottomGlossStyle" TargetType="{x:Type Rectangle}">
+    <Setter Property="Fill" Value="{StaticResource BottomGlossFill}" />
+    <Setter Property="HorizontalAlignment" Value="Stretch" />
+    <Setter Property="Margin" Value="1.5,0,1.5,0" />
+    <Setter Property="Stroke" Value="{x:Null}" />
+    <Setter Property="StrokeThickness" Value="0.0" />
+    <Setter Property="RadiusX" Value="3" />
+    <Setter Property="RadiusY" Value="3" />
+    <Setter Property="VerticalAlignment" Value="Top" />
+  </Style>
+
+  <Style TargetType="{x:Type local:DetailPanel}">
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type local:DetailPanel}">
+          <Border
+            x:Name="mainBorder"
+            Background="{StaticResource OuterStroke}"
+            CornerRadius="3" Margin="0" Padding="0.7,1.2,0.7,1.5">
+            <Grid>
+              <Rectangle
+                Style="{StaticResource InnerStrokeStyle}" />
+
+              <Rectangle
+                x:Name="PART_TopGloss"
+                Style="{StaticResource TopGlossStyle}" />
+
+              <Rectangle
+                x:Name="PART_BottomGloss"
+                Style="{StaticResource BottomGlossStyle}" />
+
+              <ContentPresenter
+                Name="PART_Body"
+                Content="{TemplateBinding Content}"
+                Margin="2" HorizontalAlignment="Center" VerticalAlignment="Top" />
+
+            </Grid>
+          </Border>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="iTuner.iTunes.ChartLyricsLyricsProvider" Collapsed="true">
+    <Position X="1.5" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAQABAAAAAAA=</HashCode>
+      <FileName>iTunes\LyricsEngine\ChartLyricsLyricsProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iTuner.iTunes.LyrdbLyricsProvider" Collapsed="true">
+    <Position X="3.75" Y="4" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAEAAUAAAQABAAAAAAA=</HashCode>
+      <FileName>iTunes\LyricsEngine\LyrdbLyricsProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iTuner.iTunes.LyricsPluginLyricsProvider" Collapsed="true">
+    <Position X="6" Y="4" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAACAAAgAAAAAEAAAAAAAgAAAAA=</HashCode>
+      <FileName>iTunes\LyricsEngine\LyricsPluginLyricsProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="iTuner.iTunes.LyricsProviderBase" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAABAAAAAAAQAAAAEAFAAAAAAAAAEAAA=</HashCode>
+      <FileName>iTunes\LyricsEngine\LyricsProviderBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="iTuner.iTunes.ILyricsProvider">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAQAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>iTunes\LyricsEngine\ILyricsProvider.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

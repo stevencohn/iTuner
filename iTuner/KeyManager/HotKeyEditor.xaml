@@ -1,0 +1,114 @@
+﻿<Window
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:local="clr-namespace:iTuner"
+  xmlns:resx="clr-namespace:iTuner.Properties"
+  x:Class="iTuner.HotKeyEditor"
+  x:ClassModifier="internal"
+  mc:Ignorable="d"
+  Title="" ShowInTaskbar="False" ResizeMode="NoResize"
+  AllowsTransparency="True" Topmost="True" Background="Transparent"
+  WindowStyle="None" Visibility="Visible"
+  Height="248" Width="253">
+
+  <Window.Resources>
+    <local:HotKeyActionConverter x:Key="ActionConverter" />
+
+    <Style TargetType="{x:Type TextBlock}">
+      <Setter Property="FontSize" Value="12"/>
+      <Setter Property="FontFamily" Value="Calibri"/>
+      <Setter Property="Margin" Value="0,0,5,0"/>
+      <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+    <Style TargetType="{x:Type Button}">
+      <Setter Property="FontSize" Value="12"/>
+      <Setter Property="FontFamily" Value="Calibri"/>
+      <Setter Property="Margin" Value="3,0,0,0"/>
+    </Style>
+
+    <LinearGradientBrush x:Key="edItemFill" EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
+      <GradientStop Color="#FFE4E4E4" Offset="0"/>
+      <GradientStop Color="#FFB1B1B1" Offset="0.984"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="edItemSelected" EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
+      <GradientStop Color="#FFF1F1F1" Offset="0"/>
+      <GradientStop Color="#FFC4C4C4" Offset="0.984"/>
+    </LinearGradientBrush>
+    <LinearGradientBrush x:Key="edItemStroke" EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
+      <GradientStop Color="#FF858484" Offset="1"/>
+      <GradientStop Color="#FF858484" Offset="0"/>
+    </LinearGradientBrush>
+    <Style x:Key="EditorItemStyle" TargetType="{x:Type ListViewItem}">
+      <Setter Property="Foreground" Value="Black" />
+      <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+      <Setter Property="Margin" Value="0" />
+      <Setter Property="Padding" Value="3,1,0,1" />
+      <Style.Triggers>
+        <Trigger Property="IsMouseOver" Value="True">
+          <Setter Property="BorderBrush" Value="{StaticResource edItemStroke}" />
+          <Setter Property="Background" Value="{StaticResource edItemFill}" />
+        </Trigger>
+        <Trigger Property="IsSelected" Value="True">
+          <Setter Property="BorderBrush" Value="{StaticResource edItemStroke}" />
+          <Setter Property="Background" Value="{StaticResource edItemSelected}" />
+        </Trigger>
+      </Style.Triggers>
+    </Style>
+  </Window.Resources>
+
+  <!-- border must have a right/bottom margin to accomodate the drop-shadow -->
+
+  <Border
+    CornerRadius="5" Padding="1" Margin="0,0,8,8" Opacity="1"
+    Background="{StaticResource iTunesOutline}">
+    <Border.Effect>
+      <DropShadowEffect BlurRadius="6" ShadowDepth="6" Opacity="0.35"/>
+    </Border.Effect>
+
+    <Border
+      CornerRadius="5" Padding="0"
+      Background="{StaticResource iTunesBackground}">
+
+      <StackPanel Orientation="Vertical" Margin="5">
+
+        <local:DetailPanel Margin="0,0,0,4">
+          <TextBlock Margin="4,-2,0,0" Text="{x:Static resx:Resources.HotKeyEditor_Directions}"/>
+        </local:DetailPanel>
+
+        <ListView
+          x:Name="editor" SelectionMode="Single"
+          Background="Transparent" BorderThickness="0"
+          ItemContainerStyle="{DynamicResource EditorItemStyle}"
+          ItemsSource="{Binding KeyMap, Mode=OneWay}">
+          <ListView.Resources>
+            <Style TargetType="{x:Type GridViewColumnHeader}">
+              <Setter Property="Visibility" Value="Collapsed" />
+            </Style>
+          </ListView.Resources>
+          <ListView.View>
+            <GridView>
+              <GridViewColumn DisplayMemberBinding="{Binding Action, Converter={StaticResource ActionConverter}}" Header="Action" />
+              <GridViewColumn DisplayMemberBinding="{Binding Sequence}" Header="Sequence" />
+            </GridView>
+          </ListView.View>
+        </ListView>
+
+        <StackPanel
+          Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,8,0,0">
+
+          <Button
+            Content="{x:Static resx:Resources.OKButton}" IsDefault="True" Click="DoOK"
+            Width="50" Margin="0,0,4,0" Style="{StaticResource iButtonStyle}" />
+
+          <Button
+            Content="{x:Static resx:Resources.CancelButton}" IsCancel="True" Click="DoCancel"
+            Width="50" Style="{StaticResource iButtonStyle}" />
+
+        </StackPanel>
+      </StackPanel>
+    </Border>
+  </Border>
+</Window>

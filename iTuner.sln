@@ -1,0 +1,114 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{302AAC69-739F-4654-9C11-B038336B77F3}"
+	ProjectSection(SolutionItems) = preProject
+		iTuner.vsmdi = iTuner.vsmdi
+		iTuner2.vsmdi = iTuner2.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iTuner", "iTuner\iTuner.csproj", "{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}"
+	ProjectSection(ProjectDependencies) = postProject
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917} = {702A5A67-3369-46D1-BA06-F3C92CF9B917}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iTunerTests", "iTunerTests\iTunerTests.csproj", "{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iTunerPseudolator", "iTunerPseudolator\iTunerPseudolator.csproj", "{702A5A67-3369-46D1-BA06-F3C92CF9B917}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "iTunerSetup", "iTunerSetup\iTunerSetup.wixproj", "{EC3E40AC-D07C-479D-9810-54A8ABA70D90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Debug|x64.Build.0 = Debug|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Release|x64.ActiveCfg = Release|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Release|x64.Build.0 = Release|Any CPU
+		{70D7300A-C4C0-40BC-A9E5-6CEF0B768F82}.Release|x86.ActiveCfg = Release|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Debug|x64.Build.0 = Debug|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Release|x64.ActiveCfg = Release|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Release|x64.Build.0 = Release|Any CPU
+		{F47F5A79-AEE4-433E-A3AC-D96D0E9626B1}.Release|x86.ActiveCfg = Release|Any CPU
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Debug|Any CPU.Build.0 = Debug|x86
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Debug|x64.ActiveCfg = Debug|x86
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Debug|x86.ActiveCfg = Debug|x86
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Debug|x86.Build.0 = Debug|x86
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Release|Any CPU.ActiveCfg = Release|x86
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Release|Mixed Platforms.Build.0 = Release|x86
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Release|x64.ActiveCfg = Release|x86
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Release|x86.ActiveCfg = Release|x86
+		{702A5A67-3369-46D1-BA06-F3C92CF9B917}.Release|x86.Build.0 = Release|x86
+		{EC3E40AC-D07C-479D-9810-54A8ABA70D90}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{EC3E40AC-D07C-479D-9810-54A8ABA70D90}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{EC3E40AC-D07C-479D-9810-54A8ABA70D90}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{EC3E40AC-D07C-479D-9810-54A8ABA70D90}.Debug|x64.ActiveCfg = Debug|x86
+		{EC3E40AC-D07C-479D-9810-54A8ABA70D90}.Debug|x86.ActiveCfg = Debug|x86
+		{EC3E40AC-D07C-479D-9810-54A8ABA70D90}.Debug|x86.Build.0 = Debug|x86
+		{EC3E40AC-D07C-479D-9810-54A8ABA70D90}.Release|Any CPU.ActiveCfg = Release|x86
+		{EC3E40AC-D07C-479D-9810-54A8ABA70D90}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{EC3E40AC-D07C-479D-9810-54A8ABA70D90}.Release|Mixed Platforms.Build.0 = Release|x86
+		{EC3E40AC-D07C-479D-9810-54A8ABA70D90}.Release|x64.ActiveCfg = Release|x86
+		{EC3E40AC-D07C-479D-9810-54A8ABA70D90}.Release|x86.ActiveCfg = Release|x86
+		{EC3E40AC-D07C-479D-9810-54A8ABA70D90}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs06
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = iTuner\\iTuner.csproj
+		SccProjectName1 = iTuner
+		SccLocalPath1 = iTuner
+		SccProjectUniqueName2 = iTunerTests\\iTunerTests.csproj
+		SccProjectName2 = iTunerTests
+		SccLocalPath2 = iTunerTests
+		SccProjectUniqueName3 = iTunerPseudolator\\iTunerPseudolator.csproj
+		SccProjectName3 = iTunerPseudolator
+		SccLocalPath3 = iTunerPseudolator
+		SccProjectUniqueName4 = iTunerSetup\\iTunerSetup.wixproj
+		SccProjectName4 = iTunerSetup
+		SccLocalPath4 = iTunerSetup
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = iTuner2.vsmdi
+	EndGlobalSection
+EndGlobal

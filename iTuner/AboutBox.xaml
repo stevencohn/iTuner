@@ -1,0 +1,116 @@
+﻿<local:FadingWindow
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:iTuner"
+  xmlns:resx="clr-namespace:iTuner.Properties"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  x:Class="iTuner.AboutBox"
+  x:ClassModifier="internal"
+  Title="" Width="258" Height="180"
+  mc:Ignorable="d" d:DesignWidth="248" d:DesignHeight="160"
+  ShowInTaskbar="False" ResizeMode="NoResize"
+  AllowsTransparency="True" Topmost="True" Background="Transparent"
+  WindowStyle="None" Visibility="Visible"
+  KeyDown="DoKeyDown">
+
+  <Window.Resources>
+    <Style TargetType="TextBlock">
+      <Setter Property="FontSize" Value="12"/>
+      <Setter Property="FontFamily" Value="Calibri"/>
+      <Setter Property="Margin" Value="0,0,5,0"/>
+      <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <Style x:Key="DonateButtonStyle" TargetType="{x:Type Button}">
+      <Setter Property="SnapsToDevicePixels" Value="True"/>
+      <Setter Property="OverridesDefaultStyle" Value="True"/>
+      <Setter Property="Template">
+        <Setter.Value>
+          <ControlTemplate TargetType="{x:Type Button}">
+            <Image Name="btn" Source="{Binding DonateButtonPath, Mode=OneWay}" />
+            <ControlTemplate.Triggers>
+              <Trigger Property="IsPressed" Value="True">
+                <Setter TargetName="btn" Property="Opacity" Value="0.80" />
+              </Trigger>
+            </ControlTemplate.Triggers>
+          </ControlTemplate>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <Pen x:Key="LinkUnderlinePen" Brush="Gray">
+      <Pen.DashStyle>
+        <DashStyle Dashes="3,4" />
+      </Pen.DashStyle>
+    </Pen>
+
+    <Style x:Key="LinkBlockStyle" TargetType="TextBlock">
+      <Setter Property="HorizontalAlignment" Value="Center"/>
+      <Setter Property="FontSize" Value="12"/>
+      <Setter Property="FontFamily" Value="Calibri"/>
+      <Setter Property="TextDecorations">
+        <Setter.Value>
+          <TextDecorationCollection>
+            <TextDecoration Pen="{StaticResource LinkUnderlinePen}" PenOffset="1" />
+          </TextDecorationCollection>
+        </Setter.Value>
+      </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type Hyperlink}">
+      <Setter Property="Foreground" Value="Black" />
+      <Setter Property="TextDecorations" Value="None" />
+    </Style>
+  </Window.Resources>
+
+  <!-- border must have a right/bottom margin to accomodate the drop-shadow -->
+
+  <Border
+    x:Name="mainBorder" CornerRadius="5" Padding="1" Margin="0,0,8,8"
+    Background="{StaticResource iTunesOutline}">
+    <Border.Effect>
+      <DropShadowEffect BlurRadius="6" ShadowDepth="6" Opacity="0.30"/>
+    </Border.Effect>
+
+    <Border
+      CornerRadius="5" Padding="0"
+      Background="{StaticResource iTunesBackground}">
+
+      <StackPanel Orientation="Vertical" Margin="5">
+
+        <local:DetailPanel Margin="0,0,0,6">
+          <TextBlock x:Name="titleBlock" Text="iTuner 1.0" FontWeight="Bold" Background="Transparent" />
+        </local:DetailPanel>
+
+        <TextBlock x:Name="copyrightBlock" Text="Copyright..." Margin="8,0,0,0" />
+        <TextBlock Text="{x:Static resx:Resources.AboutBox_Reserved}" Margin="8,0,0,0" />
+
+        <TextBlock x:Name="linkBlock" Margin="0,8,0,0" Style="{StaticResource LinkBlockStyle}">
+          <Hyperlink Click="DoClickLink" MouseEnter="DoEnterLink" MouseLeave="DoLeaveLink">
+             http://ituner.codeplex.com
+          </Hyperlink>
+        </TextBlock>
+
+        <TextBlock x:Name="upgradeBlock" Margin="0,4,0,0" Style="{StaticResource LinkBlockStyle}">
+          <Hyperlink Click="DoClickUpgrade" MouseEnter="DoEnterLink" MouseLeave="DoLeaveLink">
+            <Run Text="{x:Static resx:Resources.AboutBox_Check}" />
+          </Hyperlink>
+        </TextBlock>
+
+        <TextBlock Text="{x:Static resx:Resources.AboutBox_Apple}" Margin="8,10,0,0" />
+
+        <DockPanel>
+          <Button
+            Click="DoDonate" x:Name="donateButton"
+            Width="70" Height="20" DockPanel.Dock="Left" VerticalAlignment="Bottom"
+            Style="{StaticResource DonateButtonStyle}" Margin="7,0,0,0" Cursor="Hand" />
+          <Button
+            Content="{x:Static resx:Resources.OKButton}" IsDefault="True" Click="DoOK"
+            Width="60" HorizontalAlignment="Right" DockPanel.Dock="Right"
+            Style="{StaticResource iButtonStyle}" Margin="0,12,4,0" />
+        </DockPanel>
+      </StackPanel>
+    </Border>
+  </Border>
+</local:FadingWindow>

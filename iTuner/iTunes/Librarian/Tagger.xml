@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<doc>
+
+  <!-- ===========================================================================================
+       Last updated by Steven M Cohn on 8 May 2012
+       ======================================================================================= -->
+  <!--
+
+  Use genpuid to get PUID fingerprint
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  C:\> genpuid e4230822bede81ef71cde723db743e27 -xml -rmd=2 "09-Little Martha.mp3"
+
+  -->
+
+  <genpuid songs="1" xmlns:mip="http://musicip.com/ns/mip-1.0#">
+    <track file="C:\Music\The Allman Brothers Band\Eat a Peach\09 Little Martha.mp3"
+           puid="019e0c33-0450-cdf8-211c-1ba69d6f935b">
+    </track>
+  </genpuid>
+
+  <!-- ===========================================================================================
+  
+  MusicBrainz
+  ~~~~~~~~~~~
+
+  We're using V2 of the XML_Webservice @ http://musicbrainz.org/doc/XML_Web_Service/Version_2
+
+  Use the PUID and the "release" action to retrieve basic info including disc IDs:
+  http://musicbrainz.org/ws/2/puid/019e0c33-0450-cdf8-211c-1ba69d6f935b?inc=releases+artists
+
+  From this, we can extract:
+
+    - Album  = metadata/puid/recording-list/recording/release-list/release/title
+    - Artist = metadata/puid/recording-list/recording/artist-credit/name-credit/artist/sort-name
+    - Genre  = metadata/puid/recording-list/recording/artist-credit/name-credit/artist/name/tag-list/tag/name
+    - Title  = metadata/puid/recording-list/recording/title
+    - Year   = metadata/puid/recording-list/recording/release-list/release/date
+
+  -->
+
+  <metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+    <puid id="019e0c33-0450-cdf8-211c-1ba69d6f935b">
+      <recording-list count="1">
+        <recording id="c0fc36ae-d091-4c59-96fd-d63d16b32689">
+          <title>Little Martha</title>
+          <length>127466</length>
+          <artist-credit>
+            <name-credit>
+              <artist id="72359492-22be-4ed9-aaa0-efa434fb2b01">
+                <name>The Allman Brothers Band</name>
+                <sort-name>Allman Brothers Band, The</sort-name>
+                <tag-list>
+                  <tag count="1">
+                    <name>american</name>
+                  </tag>
+                  <tag count="1">
+                    .
+                    .
+                  </tag>
+                </tag-list>
+              </artist>
+            </name-credit>
+          </artist-credit>
+          <release-list count="20">
+            <release id="16710444-11a2-40a7-9ca3-74b8821b4504">
+              <title>Eat a Peach</title>
+              <status>Official</status>
+              <quality>normal</quality>
+              <date>1990</date>
+              <country>US</country>
+              <medium-list count="1">
+                <medium>
+                  <position>1</position>
+                  <format>Cassette</format>
+                  <track-list count="10" offset="8">
+                    <track>
+                      <position>9</position>
+                      <title>Little Martha</title>
+                      <length>126000</length>
+                    </track>
+                  </track-list>
+                </medium>
+              </medium-list>
+            </release>
+            <release id="1a67d99f-f789-3343-b4da-4a364a98f3be">
+              .
+              .
+            </release>
+          </release-list>
+          <tag-list>
+            <tag count="1">
+              <name>acoustic</name>
+            </tag>
+            <tag count="1">
+              .
+              .
+            </tag>
+          </tag-list>
+        </recording>
+      </recording-list>
+    </puid>
+  </metadata>
+  
+  
+  <!-- ===========================================================================================
+
+  Artist URL:
+  http://musicbrainz.org/ws/2/artist/72359492-22be-4ed9-aaa0-efa434fb2b01?inc=url-rels
+  
+  From this, we can extract the URL of the artist Web page.
+  Prioritorize targets by
+  
+    1. "official homepage"
+    2. "wikipedia"
+    3. "IMDb"
+    4. first available
+
+  - relations = metadata/artist/relation-list/relation@type=url/target
+
+  -->
+
+  <metadata xmlns="http://musicbrainz.org/ns/mmd-2.0#">
+    <artist id="72359492-22be-4ed9-aaa0-efa434fb2b01" type="Group">
+      <name>The Allman Brothers Band</name>
+      <sort-name>Allman Brothers Band, The</sort-name>
+      <country>US</country>
+      <life-span>
+        <begin>1969-03-26</begin>
+      </life-span>
+      <relation-list target-type="url">
+        <relation type="wikipedia">
+          <target>http://en.wikipedia.org/wiki/The_Allman_Brothers_Band</target>
+        </relation>
+        <relation type="official homepage">
+          <target>http://www.allmanbrothersband.com/</target>
+        </relation>
+        <relation type="BBC Music page">
+          <target>http://www.bbc.co.uk/music/artists/72359492-22be-4ed9-aaa0-efa434fb2b01</target>
+        </relation>
+        <relation type="discogs">
+          <target>http://www.discogs.com/artist/Allman+Brothers+Band%2C+The</target>
+        </relation>
+        <relation type="social network">
+          <target>http://www.facebook.com/allmanbrothersband</target>
+        </relation>
+        <relation type="IMDb">
+          <target>http://www.imdb.com/name/nm1876655/</target>
+        </relation>
+        <relation type="myspace">
+          <target>http://www.myspace.com/allmanbrotherslegacy</target>
+        </relation>
+        <relation type="fanpage">
+          <target>http://zebro.everperfect.com/allman/</target>
+        </relation>
+      </relation-list>
+    </artist>
+  </metadata>
+
+</doc>

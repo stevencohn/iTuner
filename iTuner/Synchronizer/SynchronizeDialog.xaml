@@ -1,0 +1,210 @@
+﻿<controls:MovableWindow
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:local="clr-namespace:iTuner"
+  xmlns:controls="clr-namespace:iTuner.Controls"
+  xmlns:resx="clr-namespace:iTuner.Properties"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero"
+  mc:Ignorable="d" d:DesignWidth="248"
+  x:Class="iTuner.SynchronizeDialog"
+  x:ClassModifier="internal" Background="Transparent"
+  Title="iTuner MP3 Synchronize" Width="558" MinHeight="280" SizeToContent="Height"
+  ShowInTaskbar="True" AllowsTransparency="True" Topmost="False"
+  WindowStyle="None" Visibility="Visible" WindowStartupLocation="CenterScreen"
+  Icon="/iTuner;Component/Images/Menu/Sync.ico">
+
+  <Window.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="..\Controls\iStyles.xaml"/>
+        <ResourceDictionary Source="..\Controls\DetailPanelStyles.xaml"/>
+      </ResourceDictionary.MergedDictionaries>
+
+      <Style TargetType="{x:Type TextBlock}">
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="FontFamily" Value="Segoe UI"/>
+        <Setter Property="Margin" Value="0,0,5,0"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+      </Style>
+
+      <Style x:Key="PlaylistItemStyle" TargetType="{x:Type ListBoxItem}">
+        <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+        <Setter Property="HorizontalContentAlignment" Value="{Binding HorizontalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+        <Setter Property="VerticalContentAlignment" Value="{Binding VerticalContentAlignment, RelativeSource={RelativeSource AncestorType={x:Type ItemsControl}}}"/>
+        <Setter Property="Padding" Value="2,0,0,0"/>
+        <Setter Property="IsSelected" Value="{Binding IsSelected}"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type ListBoxItem}">
+              <Border
+                x:Name="Bd" SnapsToDevicePixels="true"
+                Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                Padding="0,1,0,1">
+                <StackPanel Orientation="Horizontal">
+                  <CheckBox
+                    x:Name="cb"
+                    IsChecked="{Binding	RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type ListBoxItem}}, Path=IsSelected}">
+                    <StackPanel Orientation="Horizontal">
+                      <Image x:Name="im" Source="..\images\playlists\playlistUser.png" Margin="2,0,2,0"/>
+                      <TextBlock x:Name="tx" Text="{Binding Name}" TextTrimming="CharacterEllipsis"/>
+                    </StackPanel>
+                  </CheckBox>
+                </StackPanel>
+              </Border>
+              <ControlTemplate.Triggers>
+                <DataTrigger Binding="{Binding Path=SpecialKind}" Value="Purchased">
+                  <Setter
+                    TargetName="im" Property="Image.Source"
+                    Value="..\images\Playlists\PlaylistPurchased.png" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=SpecialKind}" Value="Folder">
+                  <Setter
+                    TargetName="im" Property="Image.Source"
+                    Value="..\images\Playlists\PlaylistFolder.png" />
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=SpecialKind}" Value="Smart">
+                  <Setter
+                    TargetName="im" Property="Image.Source"
+                    Value="..\images\Playlists\PlaylistSmart.png" />
+                </DataTrigger>
+                <Trigger Property="IsEnabled" Value="false">
+                  <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                  <Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+                </Trigger>
+                <MultiTrigger>
+                  <MultiTrigger.Conditions>
+                    <Condition Property="IsEnabled" Value="true"/>
+                    <Condition Property="ItemsControl.AlternationIndex" Value="1"/>
+                  </MultiTrigger.Conditions>
+                  <Setter Property="Background" TargetName="Bd" Value="#0B000000"></Setter>
+                </MultiTrigger>
+              </ControlTemplate.Triggers>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+      <SolidColorBrush x:Key="ListBorder" Color="#828790"/>
+      <Style x:Key="PlaylistBoxStyle" TargetType="{x:Type ListBox}">
+        <Setter Property="AlternationCount" Value="2"/>
+        <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource ListBorder}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.ControlTextBrushKey}}"/>
+        <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto"/>
+        <Setter Property="ScrollViewer.CanContentScroll" Value="true"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="ItemContainerStyle" Value="{StaticResource PlaylistItemStyle}"/>
+        <Setter Property="Template">
+          <Setter.Value>
+            <ControlTemplate TargetType="{x:Type ListBox}">
+              <Border
+                x:Name="Bd" SnapsToDevicePixels="true"
+                Background="{TemplateBinding Background}"
+                BorderBrush="{TemplateBinding BorderBrush}"
+                BorderThickness="{TemplateBinding BorderThickness}"
+                Padding="2,1,1,1"
+                CornerRadius="3">
+                <ScrollViewer Padding="{TemplateBinding Padding}" Focusable="false">
+                  <ItemsPresenter SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"/>
+                </ScrollViewer>
+              </Border>
+              <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled" Value="false">
+                  <Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+                </Trigger>
+              </ControlTemplate.Triggers>
+            </ControlTemplate>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+      <LinearGradientBrush x:Key="countBoxBackground" StartPoint="0,0" EndPoint="0,1">
+        <GradientStop Color="#FFCCD4A4" Offset="0.296" />
+        <GradientStop Color="#FFE2E2C1" Offset="0.904" />
+      </LinearGradientBrush>
+
+    </ResourceDictionary>
+  </Window.Resources>
+
+  <Border
+    x:Name="mainBorder" CornerRadius="5" Padding="1" Margin="0,0,8,8"
+    Background="{StaticResource iTunesOutline}">
+    <Border.Effect>
+      <DropShadowEffect BlurRadius="6" ShadowDepth="6" Opacity="0.30"/>
+    </Border.Effect>
+
+    <Border
+      CornerRadius="5" Padding="0"
+      Background="{StaticResource iTunesBackground}">
+
+      <DockPanel Margin="5,5,5,12" LastChildFill="True">
+
+        <local:DetailPanel x:Name="detailPanel" Margin="0,0,0,14" DockPanel.Dock="Top">
+          <TextBlock
+            x:Name="titleBlock" Text="{x:Static resx:Resources.SyncDialog_Title}" FontWeight="Bold" FontSize="12.3"
+            Background="Transparent" HorizontalAlignment="Center" />
+        </local:DetailPanel>
+
+        <DockPanel DockPanel.Dock="Top" Margin="10,0,10,0" LastChildFill="True">
+
+          <ListBox
+            x:Name="playlistBox"
+            SelectionMode="Multiple" SelectionChanged="DoSelectionChanged"
+            DockPanel.Dock="Left" MinWidth="200" Padding="1,3,0,0"
+            Style="{DynamicResource PlaylistBoxStyle}"/>
+
+          <DockPanel LastChildFill="True">
+            <DockPanel
+              LastChildFill="True"
+              DockPanel.Dock="Bottom" Margin="10,14,0,0">
+              <Button
+                x:Name="cancelButton"
+                Content="{x:Static resx:Resources.CancelButton}" IsCancel="True"
+                Width="60" DockPanel.Dock="Right"
+                Style="{StaticResource iButtonStyle}" Margin="4,0,0,0" />
+              <Button
+                x:Name="syncButton"
+                Content="{x:Static resx:Resources.SyncDialog_SyncButton}"
+                IsDefault="True" Click="DoSync" Visibility="Visible"
+                Width="60" DockPanel.Dock="Right" IsEnabled="False"
+                Style="{StaticResource iButtonStyle}" Margin="4,0,0,0" />
+              <Grid Margin="8,0,8,0">
+                <Border VerticalAlignment="Center"
+                  x:Name="countBox" CornerRadius="3" Background="{DynamicResource countBoxBackground}"
+                  BorderBrush="#828790" BorderThickness="1" Margin="5,0,0,0" Padding="0,1,0,1"
+                  Visibility="Hidden">
+                  <TextBlock
+                    x:Name="countBlock" Margin="10,0,10,0" TextDecorations="" FontSize="11"
+                    Text="{x:Static resx:Resources.SyncDialog_Select0}" />
+                </Border>
+                <StackPanel x:Name="progressPanel" Visibility="Hidden">
+                  <ProgressBar
+                    x:Name="progressBar" Height="8" Value="50"
+                    DockPanel.Dock="Left" VerticalAlignment="Bottom" />
+                  <TextBlock
+                    x:Name="progressText" Text="{x:Static resx:Resources.SyncDialog_Synchronizing}"
+                    FontSize="10" Margin="2,0,0,0" TextTrimming="CharacterEllipsis"/>
+                </StackPanel>
+              </Grid>
+            </DockPanel>
+
+            <Grid x:Name="deviceContainer" Margin="15,0,0,0">
+              <TextBlock
+                x:Name="noDeviceNotice" Visibility="Hidden"
+                VerticalAlignment="Top" TextWrapping="Wrap"
+                Text="{x:Static resx:Resources.SyncDialog_NoUSB}"/>
+              <local:DeviceSelector
+                x:Name="selector" Visibility="Visible" />
+            </Grid>
+
+          </DockPanel>
+        </DockPanel>
+      </DockPanel>
+    </Border>
+  </Border>
+</controls:MovableWindow>

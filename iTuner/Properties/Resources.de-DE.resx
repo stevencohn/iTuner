@@ -1,0 +1,1077 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="I_ApplicationTitle" xml:space="preserve">
+    <value>iTuner</value>
+    <comment>Name of the application</comment>
+  </data>
+  <data name="I_ApplicationCompany" xml:space="preserve">
+    <value>River Software</value>
+    <comment>Installation property</comment>
+  </data>
+  <data name="FilenameHotkeys" xml:space="preserve">
+    <value>iTuner_Keys.xml</value>
+    <comment>Deployment</comment>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="NextTrack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu\nexttrack.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pause" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\pause.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\play.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PrevTrack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu\prevtrack.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="I_ApplicationProduct" xml:space="preserve">
+    <value>iTuner</value>
+    <comment>Installation property</comment>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>(unknown)</value>
+    <comment>tag marking unknown field values</comment>
+  </data>
+  <data name="Mute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\mute.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VersionFormat" xml:space="preserve">
+    <value>{0} v{1}.{2}.{3}</value>
+    <comment>About box version title string format</comment>
+  </data>
+  <data name="I_SingletonID" xml:space="preserve">
+    <value>{36521039-4D94-40bd-9E7C-EBFB8B34ECE5}</value>
+    <comment>Invariant, iTuner singleton window ID</comment>
+  </data>
+  <data name="SingletonMessage" xml:space="preserve">
+    <value>{0} läuft bereits</value>
+    <comment>Message shown when other instance is already running</comment>
+  </data>
+  <data name="ActionMute" xml:space="preserve">
+    <value>Stumm</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionNextTrack" xml:space="preserve">
+    <value>Nächster Titel</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionPlayPause" xml:space="preserve">
+    <value>Play/Pause</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionPrevTrack" xml:space="preserve">
+    <value>Vorheriger Titel</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionShowiTuner" xml:space="preserve">
+    <value>Zeige iTuner</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionShowiTunes" xml:space="preserve">
+    <value>Zeige iTunes</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionVolumeDown" xml:space="preserve">
+    <value>Leiser</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="ActionVolumeUp" xml:space="preserve">
+    <value>Lauter</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="iTunesMissing" xml:space="preserve">
+    <value>iTunes ist nicht auf den PC installiert</value>
+    <comment>iTunes missing notification</comment>
+  </data>
+  <data name="LyricsOff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\lyrics\lyricsoff.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LyricsOff1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\lyrics\lyricsoff1.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LyricsOff2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\lyrics\lyricsoff2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LyricsOff3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\lyrics\lyricsoff3.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LyricsOff4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\lyrics\lyricsoff4.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LyricsOff5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\lyrics\lyricsoff5.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LyricsOn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\lyrics\lyricson.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="VolumeSettingFormat" xml:space="preserve">
+    <value>Volume ({0})</value>
+    <comment>Volume slider tooltip</comment>
+  </data>
+  <data name="LyricsAlbumLine" xml:space="preserve">
+    <value>Album....: {0} ({1})</value>
+    <comment>Album line of lyrics text file</comment>
+  </data>
+  <data name="LyricsArtistLine" xml:space="preserve">
+    <value>Künstler.: {0}</value>
+    <comment>Artist line of lyrics text file</comment>
+  </data>
+  <data name="LyricsRatingLine" xml:space="preserve">
+    <value>Bewertung: {0}</value>
+    <comment>Rating line of lyrics text file</comment>
+  </data>
+  <data name="LyricsTitleLine" xml:space="preserve">
+    <value>Titel....: {0} ({1})</value>
+    <comment>Title line of lyrics text file</comment>
+  </data>
+  <data name="I_ArchiveRootPath" xml:space="preserve">
+    <value>_iTunerArchive</value>
+    <comment>Library archive root directory</comment>
+  </data>
+  <data name="I_ScanDuplicates" xml:space="preserve">
+    <value>DoppelterScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="I_ScanEmptyDirectories" xml:space="preserve">
+    <value>LeererScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="I_ScanPhantoms" xml:space="preserve">
+    <value>PhantomScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="Library" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\library.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuAbout" xml:space="preserve">
+    <value>Über iTuner</value>
+    <comment>Context menu item, about box</comment>
+  </data>
+  <data name="MenuExit" xml:space="preserve">
+    <value>Verlassen</value>
+    <comment>Context menu item, exit iTuner</comment>
+  </data>
+  <data name="MenuExitiTunes" xml:space="preserve">
+    <value>Verlasse iTunes</value>
+    <comment>Context menu item, exit iTuner and iTunes</comment>
+  </data>
+  <data name="MenuShuffle" xml:space="preserve">
+    <value>Shuffle</value>
+    <comment>Context menu item, toggle shuffle</comment>
+  </data>
+  <data name="iTunesLibrary" xml:space="preserve">
+    <value>Bibliothek</value>
+    <comment>Source main Library name</comment>
+  </data>
+  <data name="iTunesMusicPlaylist" xml:space="preserve">
+    <value>Musik</value>
+    <comment>Music Playlist name</comment>
+  </data>
+  <data name="I_ApplicationURI" xml:space="preserve">
+    <value>http://ituner.codeplex.com</value>
+    <comment>iTuner Web site</comment>
+  </data>
+  <data name="iTunesAutoDirectory" xml:space="preserve">
+    <value>Automatisch zu iTunes hinzufügen</value>
+    <comment>Auto-drop directory</comment>
+  </data>
+  <data name="MenuClean" xml:space="preserve">
+    <value>Löschen</value>
+    <comment>Context menu item, clean sub-menu</comment>
+  </data>
+  <data name="MenuCleanAlbum" xml:space="preserve">
+    <value>Lösche Album</value>
+    <comment>Context menu item, full clean of current album</comment>
+  </data>
+  <data name="MenuCleanDuplicates" xml:space="preserve">
+    <value>Doppelte</value>
+    <comment>Context menu item, remove duplicates</comment>
+  </data>
+  <data name="MenuCleanEmpty" xml:space="preserve">
+    <value>Leeres Verzeichnis</value>
+    <comment>Context menu item, remove empty directories</comment>
+  </data>
+  <data name="MenuCleanPhantoms" xml:space="preserve">
+    <value>Toter Track</value>
+    <comment>Context menu item, remove dead tracks</comment>
+  </data>
+  <data name="MenuCleanPlaylist" xml:space="preserve">
+    <value>Lösche Wiedergabeliste</value>
+    <comment>Context menu item, clean current playlist</comment>
+  </data>
+  <data name="I_ScanContextDuplicates" xml:space="preserve">
+    <value>CtxDupScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="Duplicates" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu\duplicates.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EmptyDirectory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu\emptydirectory.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Phantom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu\phantom.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="I_ScanContextPhantoms" xml:space="preserve">
+    <value>CtxPhanScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="Export" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu\export.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Album" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu\album.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Artist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu\artist.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Playlist" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu\playlist.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="FilenameAppLog" xml:space="preserve">
+    <value>iTuner.log</value>
+    <comment>Deployment</comment>
+  </data>
+  <data name="I_ScanExport" xml:space="preserve">
+    <value>ExportiereScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="Bytes" xml:space="preserve">
+    <value>Bytes</value>
+    <comment>Bytes</comment>
+  </data>
+  <data name="MenuExport" xml:space="preserve">
+    <value>Exportieren</value>
+    <comment>Context menu item, export or sync</comment>
+  </data>
+  <data name="MenuExportAlbum" xml:space="preserve">
+    <value>Album...</value>
+    <comment>Context menu item, current album</comment>
+  </data>
+  <data name="MenuExportArtist" xml:space="preserve">
+    <value>Künstler...</value>
+    <comment>Context menu item, current artist</comment>
+  </data>
+  <data name="MenuExportPlaylist" xml:space="preserve">
+    <value>Wiedergabeliste...</value>
+    <comment>Context menu item, current playlist</comment>
+  </data>
+  <data name="MenuNextTrack" xml:space="preserve">
+    <value>Nächster Titel</value>
+    <comment>Context menu item, move to next track</comment>
+  </data>
+  <data name="MenuPrevTrack" xml:space="preserve">
+    <value>Vorheriger Titel</value>
+    <comment>Context menu item, move to previous track</comment>
+  </data>
+  <data name="MenuSync" xml:space="preserve">
+    <value>MP3 player sync...</value>
+    <comment>Context menu item, sync MP3 player</comment>
+  </data>
+  <data name="Sync" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu\sync.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlaylistFolder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\playlists\playlistfolder.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlaylistPurchased" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\playlists\playlistpurchased.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlaylistSmart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\playlists\playlistsmart.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlaylistUser" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\playlists\playlistuser.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="UsbDescription" xml:space="preserve">
+    <value>{0} {1} ({2})</value>
+    <comment>drive name (model)</comment>
+  </data>
+  <data name="FreeSpace" xml:space="preserve">
+    <value>{0} Frei auf {1}</value>
+    <comment>free space description (x of y)</comment>
+  </data>
+  <data name="FreeBytes" xml:space="preserve">
+    <value>{0} Bytes</value>
+    <comment>free space Bytes</comment>
+  </data>
+  <data name="FreeGB" xml:space="preserve">
+    <value>{0} GB</value>
+    <comment>free space GB</comment>
+  </data>
+  <data name="FreeKB" xml:space="preserve">
+    <value>{0} KB</value>
+    <comment>free space KB</comment>
+  </data>
+  <data name="FreeMB" xml:space="preserve">
+    <value>{0} MB</value>
+    <comment>free space MB</comment>
+  </data>
+  <data name="UsbLongDescription" xml:space="preserve">
+    <value>{0} {1} ({2}) {3}</value>
+    <comment>drive name (model) FreeSpace</comment>
+  </data>
+  <data name="I_FolderFormats" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>i_folderformats.xml;System.String, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="iTunesGeniusPlaylist" xml:space="preserve">
+    <value>Genius</value>
+    <comment>Genius Playlist name</comment>
+  </data>
+  <data name="I_ScanInitialize" xml:space="preserve">
+    <value>InitialisierenScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="Completed" xml:space="preserve">
+    <value>Fertig</value>
+    <comment>Completed task notification</comment>
+  </data>
+  <data name="SyncCancelCaption" xml:space="preserve">
+    <value>Beende Synchronisation</value>
+    <comment>Cancel dialog caption</comment>
+  </data>
+  <data name="SyncCancelText" xml:space="preserve">
+    <value>Die Synchronisation ist im Gange.
+Sie sind sicher, dass Sie abbrechen wollen?</value>
+    <comment>Cancel dialog text</comment>
+  </data>
+  <data name="SyncWarningCaption" xml:space="preserve">
+    <value>Achtung</value>
+    <comment>Synchronize warning dialog caption</comment>
+  </data>
+  <data name="SyncWarningText" xml:space="preserve">
+    <value>Dies löscht alle Dateien auf dem USB-Gerät unter {0}, der nicht Teil der ausgewählten Wiedergabelisten.
+
+Bestätigen Sie mit OK und weiter ...</value>
+    <comment>Synchronize warning dialog text</comment>
+  </data>
+  <data name="TrackCountSingular" xml:space="preserve">
+    <value>Markierter {0} Titel</value>
+    <comment>Sync dialog, count of selected tracks (1)</comment>
+  </data>
+  <data name="TrackCountPlural" xml:space="preserve">
+    <value>Markierte {0} Titel</value>
+    <comment>Sync dialog, count of selected tracks ( &gt; 1)</comment>
+  </data>
+  <data name="ScanAlbumDups" xml:space="preserve">
+    <value>Album Doppelt</value>
+    <comment>Tasklist album duplicate scanner</comment>
+  </data>
+  <data name="ScanAlbumPhantoms" xml:space="preserve">
+    <value>Album nicht vorhanden</value>
+    <comment>Tasklist album dead track scanner</comment>
+  </data>
+  <data name="ScanDuplicates" xml:space="preserve">
+    <value>Nach doppelten Dateien suchen</value>
+    <comment>Tasklist duplicate scanner</comment>
+  </data>
+  <data name="ScanEmpty" xml:space="preserve">
+    <value>Leere Dateien suchen</value>
+    <comment>Tasklist empty dir scanner</comment>
+  </data>
+  <data name="ScanExport" xml:space="preserve">
+    <value>Exportierer</value>
+    <comment>Tasklist exporter</comment>
+  </data>
+  <data name="ScanPhantoms" xml:space="preserve">
+    <value>Tod Scanner</value>
+    <comment>Tasklist dead track scanner</comment>
+  </data>
+  <data name="ScanSynchronize" xml:space="preserve">
+    <value>Synchronizer</value>
+    <comment>Tasklist synchronizer</comment>
+  </data>
+  <data name="I_ReleaseHtmFormat" xml:space="preserve">
+    <value>&lt;html&gt;&lt;header&gt;&lt;style&gt;BODY {{font-family:Calibri;font-size:10pt;background:#E2E2C1;margin:0 4 0 4;}}&lt;/style&gt;&lt;/header&gt;&lt;body&gt;{0}&lt;/body&gt;&lt;/html&gt;</value>
+    <comment>Invariant, release upgrade Web browser HTML</comment>
+  </data>
+  <data name="NoUpgrades" xml:space="preserve">
+    <value>Sie führen die neueste Version von iTuner aus</value>
+    <comment>No upgrade notice</comment>
+  </data>
+  <data name="NoUpdateConnection" xml:space="preserve">
+    <value>Kann keine Verbindung zu CodePlex hergestellt. Bitte versuchen es später noch einmal.</value>
+    <comment>No upgrade notice, error</comment>
+  </data>
+  <data name="I_ScanMaintenance" xml:space="preserve">
+    <value>MaintenanceScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="ScanInitialize" xml:space="preserve">
+    <value>Initialisieren</value>
+    <comment>Tasklist initialization scanner</comment>
+  </data>
+  <data name="ScanMaintenance" xml:space="preserve">
+    <value>Maintain DB</value>
+    <comment>Tasklist maintenance scanner</comment>
+  </data>
+  <data name="I_ScanFileWatch" xml:space="preserve">
+    <value>FileWatchScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="ScanFileWatch" xml:space="preserve">
+    <value>Zeig Scanner</value>
+    <comment>Tasklist file watch scanner</comment>
+  </data>
+  <data name="PauseActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\pauseactive.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="PlayActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\playactive.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="I_iTunesDttmFormat" xml:space="preserve">
+    <value>yyyy-MM-ddThh:mm:ssZ</value>
+    <comment>iTunes Library UTC date/time format</comment>
+  </data>
+  <data name="NoBrowserCaption" xml:space="preserve">
+    <value>Fehler: Die URL konnte nicht geöffnet werden</value>
+    <comment>No internet browsre installed</comment>
+  </data>
+  <data name="NoBrowserMessage" xml:space="preserve">
+    <value>Kein Internet Browser. Wie wollen sie fortfahren?</value>
+    <comment>No internet browser installed</comment>
+  </data>
+  <data name="HotKeyNotRegistered" xml:space="preserve">
+    <value>Could not register {0} hot key [{1}].  {0} sequence set to None.</value>
+    <comment>Unable to register hotkey</comment>
+  </data>
+  <data name="HotKeyNotUnregistered" xml:space="preserve">
+    <value>Could not unregister {0} hot key [{1}]</value>
+    <comment>Unable to unregister hotkey</comment>
+  </data>
+  <data name="HotKeysNotSaved" xml:space="preserve">
+    <value>Error speichern hot keys: {0}</value>
+    <comment>Error saving hot keys</comment>
+  </data>
+  <data name="PlaylistMovies" xml:space="preserve">
+    <value>Filme</value>
+    <comment>Playlist name, Movies</comment>
+  </data>
+  <data name="PlaylistPodcasts" xml:space="preserve">
+    <value>Podcasts</value>
+    <comment>Playlist name, Podcasts</comment>
+  </data>
+  <data name="PlaylistRadio" xml:space="preserve">
+    <value>Radio</value>
+    <comment>Playlist name, Radio</comment>
+  </data>
+  <data name="PlaylistStore" xml:space="preserve">
+    <value>iTunes Store</value>
+    <comment>Playlist name, iTunes Store</comment>
+  </data>
+  <data name="PlaylistTVShows" xml:space="preserve">
+    <value>TV Shows</value>
+    <comment>Playlist name, TV Shows</comment>
+  </data>
+  <data name="PlaylistGenius" xml:space="preserve">
+    <value>Genius</value>
+    <comment>Playlist name, Genius</comment>
+  </data>
+  <data name="ExportFolderDialogDescription" xml:space="preserve">
+    <value>Markieren die iTuner Export Ort</value>
+    <comment>Export browser folders dialog description</comment>
+  </data>
+  <data name="ExportingAlbum" xml:space="preserve">
+    <value>Exporting {0} tracks from album '{1}' by '{2}'</value>
+    <comment>Export dialog details, by album: Exporting {#} tracks from {album} by {author}</comment>
+  </data>
+  <data name="ExportingArtist" xml:space="preserve">
+    <value>Exporting {0} tracks by artist '{1}'</value>
+    <comment>Export dialog details, by artist: Exporting {#} tracks</comment>
+  </data>
+  <data name="ExportingPlaylist" xml:space="preserve">
+    <value>Exporting {0} tracks from playlist '{1}'</value>
+    <comment>Export dialog details, by playlist</comment>
+  </data>
+  <data name="ExportCancelCaption" xml:space="preserve">
+    <value>Warning</value>
+    <comment>Export warning dialog caption</comment>
+  </data>
+  <data name="ExportCancelText" xml:space="preserve">
+    <value>Export wird Ausgeführt.
+Sie sind sicher, dass Sie abbrechen wollen?</value>
+    <comment>Export warning dialog text</comment>
+  </data>
+  <data name="ExportWarningDialogCaption" xml:space="preserve">
+    <value>Export Warnung</value>
+    <comment>Large export warning dialog title</comment>
+  </data>
+  <data name="ExportWarningDialogText" xml:space="preserve">
+    <value>Geschätzte Zeit zum Export {0} des Titel ist {1}. Während dieser Prozess läuft  kann man immer noch mit iTunes und iTuner arbeiten oder beenden sie den Export.
+
+Wollen Sie weitermachen?</value>
+    <comment>Large export warning dialog text</comment>
+  </data>
+  <data name="ScanDuplicatesByAlbum" xml:space="preserve">
+    <value>Doppeltes Album</value>
+    <comment>Tasklist duplicates album scanner</comment>
+  </data>
+  <data name="ScanDuplicatesByPlaylist" xml:space="preserve">
+    <value>Doppelte Wiedergabeliste</value>
+    <comment>Tasklist duplicates playlist scanner</comment>
+  </data>
+  <data name="ScanPhantomByAlbum" xml:space="preserve">
+    <value>Totes Album</value>
+    <comment>Tasklist phantoms album scanner</comment>
+  </data>
+  <data name="ScanPhantomByPlaylist" xml:space="preserve">
+    <value>Tote Playlist</value>
+    <comment>Tasklist phantoms playlist scanner</comment>
+  </data>
+  <data name="ActionShowLyrics" xml:space="preserve">
+    <value>Zeige Lyrics</value>
+    <comment>Hot key action</comment>
+  </data>
+  <data name="IncompatibleAssemblies" xml:space="preserve">
+    <value>Diese Version von iTuner ist nicht kompatible mit dieser Version von iTunes</value>
+    <comment>Incompatible exception, cannot instantiate</comment>
+  </data>
+  <data name="IncompatibleVersions" xml:space="preserve">
+    <value>iTunes {0} ist nicht compatible mit iTuner's iTunesLib {1}.{2}</value>
+    <comment>Incompatible exception, versions</comment>
+  </data>
+  <data name="EncoderNone" xml:space="preserve">
+    <value>No encoding</value>
+    <comment>Encoder options, none</comment>
+  </data>
+  <data name="MenuOptions" xml:space="preserve">
+    <value>Einstellungen...</value>
+    <comment>Context menu item, options dialog</comment>
+  </data>
+  <data name="ExportingCount" xml:space="preserve">
+    <value>Exportiere {0} Tracks</value>
+    <comment>Tooltip for ExportScanner task item</comment>
+  </data>
+  <data name="Import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu\import.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuImport" xml:space="preserve">
+    <value>Importiere Wiedergabeliste...</value>
+    <comment>Context menu item, import playlist</comment>
+  </data>
+  <data name="ImportCancelCaption" xml:space="preserve">
+    <value>Warnung</value>
+    <comment>Import warning dialog caption</comment>
+  </data>
+  <data name="ImportCancelText" xml:space="preserve">
+    <value>Import wir ausgeführt.
+Sie sind sicher, dass Sie abbrechen wollen?</value>
+    <comment>Import warning dialog text</comment>
+  </data>
+  <data name="ImportPlaylistDialogTitle" xml:space="preserve">
+    <value>Importiere Wiedergabeliste</value>
+    <comment>Import playlist dialog title</comment>
+  </data>
+  <data name="I_ScanImportPlaylist" xml:space="preserve">
+    <value>ImportierePlaylistScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="ScanImportPlaylist" xml:space="preserve">
+    <value>Importiere Playlist</value>
+    <comment>Tasklist import playlist scanner</comment>
+  </data>
+  <data name="ProtectedAAC" xml:space="preserve">
+    <value>Geschützte AAC</value>
+    <comment>Protected AAC substring</comment>
+  </data>
+  <data name="AboutBox_Apple" xml:space="preserve">
+    <value>iTunes ist ein eingetragenes Markenzeichen der Apple Inc.</value>
+    <comment>Apple trademark line</comment>
+  </data>
+  <data name="AboutBox_Check" xml:space="preserve">
+    <value>Nach Updates suchen</value>
+    <comment>Upgrade hyperlink</comment>
+  </data>
+  <data name="AboutBox_Copyright" xml:space="preserve">
+    <value>Copyright © {0} {1}</value>
+    <comment>Copyright {year} {author}</comment>
+  </data>
+  <data name="AboutBox_Reserved" xml:space="preserve">
+    <value>Alle Rechte vorbehalten</value>
+    <comment>All rights reserved</comment>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Abbrechen</value>
+    <comment>general Cancel button</comment>
+  </data>
+  <data name="ControlPanel_NextTrack" xml:space="preserve">
+    <value>Nächster Titel</value>
+    <comment>Next track button tooltip</comment>
+  </data>
+  <data name="ControlPanel_PlayPause" xml:space="preserve">
+    <value>Play/Pause</value>
+    <comment>Play/Pause button tooltip</comment>
+  </data>
+  <data name="ControlPanel_PrevTrack" xml:space="preserve">
+    <value>Vorheriger Titel</value>
+    <comment>Previous track button tooltip</comment>
+  </data>
+  <data name="DeviceSelector_Album" xml:space="preserve">
+    <value>Album</value>
+    <comment>output path part</comment>
+  </data>
+  <data name="DeviceSelector_Artist" xml:space="preserve">
+    <value>Artist</value>
+    <comment>output path part</comment>
+  </data>
+  <data name="DeviceSelector_Drive" xml:space="preserve">
+    <value>Drive:</value>
+    <comment>label</comment>
+  </data>
+  <data name="DeviceSelector_Free" xml:space="preserve">
+    <value>Freier Speicher:</value>
+    <comment>label</comment>
+  </data>
+  <data name="DeviceSelector_Genre" xml:space="preserve">
+    <value>Genre</value>
+    <comment>output path part</comment>
+  </data>
+  <data name="DeviceSelector_Layout" xml:space="preserve">
+    <value>Layout:</value>
+    <comment>label</comment>
+  </data>
+  <data name="DeviceSelector_Model" xml:space="preserve">
+    <value>Model:</value>
+    <comment>label</comment>
+  </data>
+  <data name="DeviceSelector_Playlist" xml:space="preserve">
+    <value>Playlist</value>
+    <comment>output path part</comment>
+  </data>
+  <data name="DeviceSelector_Target" xml:space="preserve">
+    <value>Zielordner:</value>
+    <comment>label</comment>
+  </data>
+  <data name="DeviceSelector_Title" xml:space="preserve">
+    <value># Title</value>
+    <comment>output path part</comment>
+  </data>
+  <data name="HotKeyEditor_Directions" xml:space="preserve">
+    <value>Klicken Sie auf eine Aktion und drücken Sie eine Tastenkombination</value>
+    <comment>Dialog top directions</comment>
+  </data>
+  <data name="OKButton" xml:space="preserve">
+    <value>OK</value>
+    <comment>general OK button</comment>
+  </data>
+  <data name="OptionsDialog_Title" xml:space="preserve">
+    <value>iTuner Einstellungen</value>
+    <comment>Options dialog title</comment>
+  </data>
+  <data name="ScannerOptions_Archive" xml:space="preserve">
+    <value>Sucht und entfernt die doppelten Titel innerhalb eines Albums. Duplikate werden nicht gelöscht, sondern in ein spezielles iTuner Archiv-Verzeichnis verschoben.</value>
+    <comment>Archive option description</comment>
+  </data>
+  <data name="ScannerOptions_ArchiveTitle" xml:space="preserve">
+    <value>Archiviere Duplikate</value>
+    <comment>Archive option lead</comment>
+  </data>
+  <data name="ScannerOptions_Description" xml:space="preserve">
+    <value>iTuner startet automatisch jede dieser Wartungsaufgaben während Musik gespielt wird. Der automatische Scanner verarbeitet jedes Album einzeln.</value>
+    <comment>Dialog description</comment>
+  </data>
+  <data name="ScannerOptions_Phantom" xml:space="preserve">
+    <value>Sucht und entfernt verwaiste Titel. Das sind Einträge in iTunes, für die keine Datei auf der Festplatte existiert.</value>
+    <comment>Phantom option description</comment>
+  </data>
+  <data name="ScannerOptions_PhantomTitle" xml:space="preserve">
+    <value>Entferne verwaiste Titel</value>
+    <comment>Phantom option lead</comment>
+  </data>
+  <data name="ScannerOptions_Watch" xml:space="preserve">
+    <value>Verfolgt Änderungen im iTunes Media-Ordner auf Ihrer Festplatte und synchronisiert die Änderungen mit der iTunes Bibliothek. Dazu zählen der automatisierte Import von neuen Dateien, Löschen von Dateien und Umbenennen von Dateien.</value>
+    <comment>Watch option description</comment>
+  </data>
+  <data name="ScannerOptions_WatchTitle" xml:space="preserve">
+    <value>Zeige Dateien</value>
+    <comment>Watch option lead</comment>
+  </data>
+  <data name="SplashWindow_Starting" xml:space="preserve">
+    <value>Starte iTunes...</value>
+    <comment>Splash window wait comment</comment>
+  </data>
+  <data name="TaskPanel_ChangeOptions" xml:space="preserve">
+    <value>Einstellungen ändern</value>
+    <comment>Change options link</comment>
+  </data>
+  <data name="TaskPanel_ChangeView" xml:space="preserve">
+    <value>Ansicht ändern</value>
+    <comment>change view button</comment>
+  </data>
+  <data name="TaskPanel_NoTasks" xml:space="preserve">
+    <value>Keine aktiven Aufgaben</value>
+    <comment>No current tasks message</comment>
+  </data>
+  <data name="TaskPanel_SetHotKeys" xml:space="preserve">
+    <value>Hot Keys</value>
+    <comment>Hot keys icon text</comment>
+  </data>
+  <data name="TaskPanel_ShowiTunes" xml:space="preserve">
+    <value>Zeige iTunes</value>
+    <comment>Show iTunes icon text</comment>
+  </data>
+  <data name="TaskPanel_ShowLyrics" xml:space="preserve">
+    <value>Zeige Lyrics</value>
+    <comment>Show lyrics tooltip</comment>
+  </data>
+  <data name="TaskPanel_ToggleShuffle" xml:space="preserve">
+    <value>Zufällige Wiedergabe ein- und ausschalten</value>
+    <comment>Toggle shuffle mode tooltip</comment>
+  </data>
+  <data name="TrackPanel_Album" xml:space="preserve">
+    <value>Album:</value>
+    <comment>Toggle shuffle mode tooltip</comment>
+  </data>
+  <data name="TrackPanel_Artist" xml:space="preserve">
+    <value>Künstler:</value>
+    <comment>label, track artist</comment>
+  </data>
+  <data name="TrackPanel_ChangeView" xml:space="preserve">
+    <value>Ändere Ansicht</value>
+    <comment>Change view button</comment>
+  </data>
+  <data name="TrackPanel_Genre" xml:space="preserve">
+    <value>Genre:</value>
+    <comment>label, music genre</comment>
+  </data>
+  <data name="TrackPanel_Kind" xml:space="preserve">
+    <value>Art:</value>
+    <comment>label, media type of track</comment>
+  </data>
+  <data name="TrackPanel_Length" xml:space="preserve">
+    <value>Länge:</value>
+    <comment>label, length/time of track</comment>
+  </data>
+  <data name="TrackPanel_Location" xml:space="preserve">
+    <value>Pfad:</value>
+    <comment>label, disk location of track</comment>
+  </data>
+  <data name="TrackPanel_Rating" xml:space="preserve">
+    <value>Bewertung:</value>
+    <comment>label, star rating</comment>
+  </data>
+  <data name="TrackPanel_Title" xml:space="preserve">
+    <value>Titel:</value>
+    <comment>label, track title</comment>
+  </data>
+  <data name="TrackPanel_Track" xml:space="preserve">
+    <value>Track:</value>
+    <comment>label, track number</comment>
+  </data>
+  <data name="TrackPanel_Year" xml:space="preserve">
+    <value>Jahr:</value>
+    <comment>lable, album publish year</comment>
+  </data>
+  <data name="UpgradeWindow_Directions" xml:space="preserve">
+    <value>Eine neue Version von iTuner ist verfügbar. Es wird empfohlen, dass Sie immer die neueste Version installieren, da diese oft kritische Fehlerbehebungen und verbesserte Funktionen beinhalten. Bitte beachten Sie den Changelog unten und klicken Sie auf "Upgrade", wenn Sie bereit sind.</value>
+    <comment>upgrade directions</comment>
+  </data>
+  <data name="UpgradeWindow_ReleaseNotes" xml:space="preserve">
+    <value>Release notes</value>
+    <comment>Release notes message</comment>
+  </data>
+  <data name="UpgradeWindow_Visit" xml:space="preserve">
+    <value>Visit upgrade web page</value>
+    <comment>Upgrade hyperlink</comment>
+  </data>
+  <data name="VolumeControl_MaxVolume" xml:space="preserve">
+    <value>Max volume</value>
+    <comment>Max volume button tooltip</comment>
+  </data>
+  <data name="VolumeControl_MinVolume" xml:space="preserve">
+    <value>Min volume</value>
+    <comment>Min volume button tooltip</comment>
+  </data>
+  <data name="ExportDialog_ExportButton" xml:space="preserve">
+    <value>Export</value>
+    <comment>Export button text</comment>
+  </data>
+  <data name="ExportDialog_Exporting" xml:space="preserve">
+    <value>Exportiere...</value>
+    <comment>Exporting message</comment>
+  </data>
+  <data name="ExportDialog_ExportUsing" xml:space="preserve">
+    <value>Export using:</value>
+    <comment>label, export using encoder</comment>
+  </data>
+  <data name="ExportDialog_Location" xml:space="preserve">
+    <value>Export Ziel:</value>
+    <comment>label, output disk location</comment>
+  </data>
+  <data name="ExportDialog_NoPlaylist" xml:space="preserve">
+    <value>Keine Playlist</value>
+    <comment>No playlist option</comment>
+  </data>
+  <data name="ExportDialog_PlaylistFormat" xml:space="preserve">
+    <value>Playlist format:</value>
+    <comment>label, playlist file format</comment>
+  </data>
+  <data name="ExportDialog_SubFolders" xml:space="preserve">
+    <value>Create artist/album sub-Ordner</value>
+    <comment>Checkbox, create sub-folders</comment>
+  </data>
+  <data name="ExportDialog_Title" xml:space="preserve">
+    <value>iTuner Export</value>
+    <comment>dialog title</comment>
+  </data>
+  <data name="RatingControl_1Star" xml:space="preserve">
+    <value>1 Stern</value>
+    <comment>1 star rating tooltip</comment>
+  </data>
+  <data name="RatingControl_2Stars" xml:space="preserve">
+    <value>2 Sterne</value>
+    <comment>2 star rating tooltip</comment>
+  </data>
+  <data name="RatingControl_3Stars" xml:space="preserve">
+    <value>3 Sterne</value>
+    <comment>3 star rating tooltip</comment>
+  </data>
+  <data name="RatingControl_4Stars" xml:space="preserve">
+    <value>4 Sterne</value>
+    <comment>4 star rating tooltip</comment>
+  </data>
+  <data name="RatingControl_5Stars" xml:space="preserve">
+    <value>5 Sterne</value>
+    <comment>5 star rating tooltip</comment>
+  </data>
+  <data name="TimeControl_PlayPosition" xml:space="preserve">
+    <value>Abspielposition</value>
+    <comment>play position tooltip</comment>
+  </data>
+  <data name="DeviceSelector_Attached" xml:space="preserve">
+    <value>Angeschlossener USB-MP3-Player</value>
+    <comment>group box header</comment>
+  </data>
+  <data name="DeviceSelector_AutoDetect" xml:space="preserve">
+    <value>Auto-Erkenn Ordner Fähigkeit</value>
+    <comment>group box header</comment>
+  </data>
+  <data name="ExceptionDialog_CopyButton" xml:space="preserve">
+    <value>Kopieren</value>
+    <comment>copy button</comment>
+  </data>
+  <data name="ExceptionDialog_DetailsBlock" xml:space="preserve">
+    <value>Details...</value>
+    <comment>details lead</comment>
+  </data>
+  <data name="ExceptionDialog_Title" xml:space="preserve">
+    <value>iTuner Exception</value>
+    <comment>dialog title</comment>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Nein</value>
+    <comment>no button</comment>
+  </data>
+  <data name="SyncDialog_NoUSB" xml:space="preserve">
+    <value>Kein USB MP3 Gerät gefunden. Schließen Sie ein Gerät an, um fortzufahren oder brechen sie ab...</value>
+    <comment>No USB device connected message</comment>
+  </data>
+  <data name="SyncDialog_Select0" xml:space="preserve">
+    <value>Markierter 0 Titel</value>
+    <comment>initial state</comment>
+  </data>
+  <data name="SyncDialog_SyncButton" xml:space="preserve">
+    <value>Sync</value>
+    <comment>Synchronize abbreviation</comment>
+  </data>
+  <data name="SyncDialog_Synchronizing" xml:space="preserve">
+    <value>Synchronisieren...</value>
+    <comment>synchronizing ready</comment>
+  </data>
+  <data name="SyncDialog_Title" xml:space="preserve">
+    <value>iTuner MP3 Synchronize</value>
+    <comment>Sync dialog title</comment>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Ja</value>
+    <comment>yes button</comment>
+  </data>
+  <data name="InitializationFailure" xml:space="preserve">
+    <value>Failed to initialize iTunes.  If an iTunes dialog is visible, dimiss it and restart iTuner.</value>
+    <comment>Initialization exception, cannot communicate with iTunes</comment>
+  </data>
+  <data name="ExportDialog_NoMedia" xml:space="preserve">
+    <value>Create playlist without exporting media files</value>
+    <comment>label, playlist only, no media files</comment>
+  </data>
+  <data name="I_ScanArtwork" xml:space="preserve">
+    <value>ArtworkScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="ScanArtwork" xml:space="preserve">
+    <value>Art Scanner</value>
+    <comment>Tasklist artwork scanner</comment>
+  </data>
+  <data name="ScannerOptions_Artwork" xml:space="preserve">
+    <value>fetch the artwork published with each album.  This is part of the Clean function.  Images are stored separately by iTunes in a proprietary format.</value>
+    <comment>Artwork option description</comment>
+  </data>
+  <data name="ScannerOptions_ArtworkTitle" xml:space="preserve">
+    <value>Album artwork</value>
+    <comment>Artwork option lead</comment>
+  </data>
+  <data name="iTuner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\app\ituner.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iTunes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tasks\itunes.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iTunes16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tasks\itunes16.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Shuffle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tasks\shuffle.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iTuner16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\app\ituner16.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="I_PayPalDonateUri" xml:space="preserve">
+    <value>https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=6UC9PK9LA92F8&amp;lc=US&amp;item_name=Support%20iTuner&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted</value>
+    <comment>Invariant, PayPal donation URI</comment>
+  </data>
+  <data name="I_ScanInformation" xml:space="preserve">
+    <value>InformationScanner</value>
+    <comment>Invariant, scanner context</comment>
+  </data>
+  <data name="MenuFix" xml:space="preserve">
+    <value>Fix information</value>
+    <comment>Context menu item, fix...</comment>
+  </data>
+  <data name="ScanInformation" xml:space="preserve">
+    <value>Fix Info</value>
+    <comment>Tasklist information scanner</comment>
+  </data>
+  <data name="Track" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\menu\track.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuFixAlbum" xml:space="preserve">
+    <value>Album</value>
+    <comment>Context menu item, fix album</comment>
+  </data>
+  <data name="MenuFixTrack" xml:space="preserve">
+    <value>Track</value>
+    <comment>Context menu item, fix track</comment>
+  </data>
+  <data name="The" xml:space="preserve">
+    <value>The</value>
+    <comment>String prefix "The"</comment>
+  </data>
+</root>

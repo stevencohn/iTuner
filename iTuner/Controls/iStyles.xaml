@@ -1,0 +1,359 @@
+﻿<ResourceDictionary    
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:Microsoft_Windows_Themes="clr-namespace:Microsoft.Windows.Themes;assembly=PresentationFramework.Aero">
+
+  <!-- iTunes steely background -->
+
+  <LinearGradientBrush x:Key="iTunesOutline" EndPoint="0.5,1" StartPoint="0.5,0">
+    <GradientStop Color="#FF939785"/>
+    <GradientStop Color="#FFE6E5E6" Offset="1"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="iTunesBackground" EndPoint="0.5,1" StartPoint="0.5,0">
+    <GradientStop Color="#FFE6E5E6"/>
+    <GradientStop Color="#FF979B9D" Offset="1"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="iTunesBackgroundUp" EndPoint="0.5,1" StartPoint="0.5,0">
+    <GradientStop Color="#FF979B9D"/>
+    <GradientStop Color="#FFE6E5E6" Offset="1"/>
+  </LinearGradientBrush>
+
+  <!-- ControlButtonStyle (FF/Rw) -->
+
+  <LinearGradientBrush x:Key="ControlButtonHover" EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
+    <LinearGradientBrush.RelativeTransform>
+      <TransformGroup>
+        <RotateTransform Angle="-17.802" CenterX="0.5" CenterY="0.5"/>
+      </TransformGroup>
+    </LinearGradientBrush.RelativeTransform>
+    <GradientStop Color="#FFB9D1EA" Offset="0.987"/>
+    <GradientStop Color="White" Offset="0.171"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="ControlButtonPressed" EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
+    <LinearGradientBrush.RelativeTransform>
+      <TransformGroup>
+        <RotateTransform Angle="-17.802" CenterX="0.5" CenterY="0.5"/>
+      </TransformGroup>
+    </LinearGradientBrush.RelativeTransform>
+    <GradientStop Color="#FF3399FF" Offset="0.987"/>
+    <GradientStop Color="White" Offset="0.171"/>
+  </LinearGradientBrush>
+
+  <Style x:Key="ControlButtonStyle" TargetType="{x:Type ButtonBase}">
+    <Setter Property="SnapsToDevicePixels" Value="True"/>
+    <Setter Property="OverridesDefaultStyle" Value="True"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ButtonBase}">
+          <Grid>
+            <!-- Background Layer -->
+            <Ellipse Stroke="#FF808080" Name="ButtonBack">
+              <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
+                  <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                      <RotateTransform Angle="-17.802" CenterX="0.5" CenterY="0.5"/>
+                    </TransformGroup>
+                  </LinearGradientBrush.RelativeTransform>
+                  <GradientStop Color="#FFC1C1C1" Offset="0.987"/>
+                  <GradientStop Color="White" Offset="0.171"/>
+                </LinearGradientBrush>
+              </Ellipse.Fill>
+            </Ellipse>
+
+            <!-- ContentPresenter -->
+            <ContentPresenter Margin="0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+          </Grid>
+
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter TargetName="ButtonBack" Property="Fill" Value="{StaticResource ControlButtonHover}" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+              <Setter TargetName="ButtonBack" Property="Fill" Value="{StaticResource ControlButtonPressed}" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <!-- FlipButtonStyle -->
+
+  <LinearGradientBrush x:Key="flipButtonFill" EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
+    <GradientStop Color="#FF7B7E6C" Offset="0.86"/>
+    <GradientStop Color="#FFA3A798" Offset="0.384"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="flipButtonHover" EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
+    <GradientStop Color="#FF686A5D" Offset="0.6"/>
+    <GradientStop Color="#FF83867A" Offset="0.15"/>
+  </LinearGradientBrush>
+
+  <Style x:Key="FlipButtonStyle" TargetType="{x:Type ToggleButton}">
+    <Setter Property="SnapsToDevicePixels" Value="True"/>
+    <Setter Property="OverridesDefaultStyle" Value="True"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ToggleButton}">
+          <Grid>
+            <Ellipse Name="bg" Fill="{StaticResource flipButtonFill}" />
+            <Path
+              Margin="1,0,0,0"
+              Data="M0,0 0,5 4,2.5" Fill="#FFDFE3C7"
+              VerticalAlignment="Center" HorizontalAlignment="Center" />
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter TargetName="bg" Property="Fill" Value="{StaticResource flipButtonHover}" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+              <Setter TargetName="bg" Property="Fill" Value="#FF101010" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <!-- PlayButtonStyle -->
+
+  <Style x:Key="PlayButtonStyle" TargetType="{x:Type ToggleButton}">
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ToggleButton}">
+          <Grid>
+            <Ellipse Width="20" Height="20" Stroke="#FF909090" Name="ButtonBack">
+              <Ellipse.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
+                  <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                      <RotateTransform Angle="-17.802" CenterX="0.5" CenterY="0.5"/>
+                    </TransformGroup>
+                  </LinearGradientBrush.RelativeTransform>
+                  <GradientStop Color="#FFC1C1C1" Offset="0.987"/>
+                  <GradientStop Color="White" Offset="0.171"/>
+                </LinearGradientBrush>
+              </Ellipse.Fill>
+            </Ellipse>
+            <Path Name="playPath" Opacity="1" Data="M7,5 7,15 16,10">
+              <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                  <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                      <RotateTransform Angle="-3.396" CenterX="0.5" CenterY="0.5"/>
+                    </TransformGroup>
+                  </LinearGradientBrush.RelativeTransform>
+                  <GradientStop Color="Black"/>
+                  <GradientStop Color="#FF8C8C8C" Offset="0.949"/>
+                </LinearGradientBrush>
+              </Path.Fill>
+            </Path>
+            <Path Name="pausePath" Opacity="0" Data="M6,6 6,14 9,14 9,6z M11,6 11,14 14,14 14,6">
+              <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                  <LinearGradientBrush.RelativeTransform>
+                    <TransformGroup>
+                      <RotateTransform Angle="-3.396" CenterX="0.5" CenterY="0.5"/>
+                    </TransformGroup>
+                  </LinearGradientBrush.RelativeTransform>
+                  <GradientStop Color="Black"/>
+                  <GradientStop Color="#FF8C8C8C" Offset="0.949"/>
+                </LinearGradientBrush>
+              </Path.Fill>
+            </Path>
+          </Grid>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter TargetName="ButtonBack" Property="Fill" Value="{StaticResource ControlButtonHover}" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+              <Setter TargetName="ButtonBack" Property="Fill" Value="{StaticResource ControlButtonPressed}" />
+            </Trigger>
+            <Trigger Property="IsChecked" Value="False">
+              <Setter Property="Opacity" TargetName="pausePath" Value="0"/>
+              <Setter Property="Opacity" TargetName="playPath" Value="1"/>
+            </Trigger>
+            <Trigger Property="IsChecked" Value="True">
+              <Setter Property="Opacity" TargetName="pausePath" Value="1"/>
+              <Setter Property="Opacity" TargetName="playPath" Value="0"/>
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <!-- FnButtonStyle -->
+
+  <LinearGradientBrush x:Key="fnButtonFill" EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
+    <GradientStop Color="#FFE6E5E6" Offset="0"/>
+    <GradientStop Color="#FF979B9D" Offset="1"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="fnButtonPressed" EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
+    <GradientStop Color="#FFBCBCBC" Offset="0"/>
+    <GradientStop Color="#FF86898B" Offset="0.984"/>
+  </LinearGradientBrush>
+
+  <LinearGradientBrush x:Key="fnButtonStroke" EndPoint="0.5,1" StartPoint="0.5,0" MappingMode="RelativeToBoundingBox">
+    <GradientStop Color="#FF858484" Offset="1"/>
+    <GradientStop Color="#FF858484" Offset="0"/>
+  </LinearGradientBrush>
+
+  <Style x:Key="FnButtonStyle" TargetType="{x:Type Button}">
+    <Setter Property="SnapsToDevicePixels" Value="True"/>
+    <Setter Property="OverridesDefaultStyle" Value="True"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Button}">
+          <Border Name="FnBorder" CornerRadius="2" BorderThickness="1" BorderBrush="Transparent">
+            <ContentPresenter Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter TargetName="FnBorder" Property="BorderBrush" Value="{StaticResource fnButtonStroke}" />
+              <Setter TargetName="FnBorder" Property="Background" Value="{StaticResource fnButtonFill}" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+              <Setter TargetName="FnBorder" Property="Background" Value="{StaticResource fnButtonPressed}" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Style x:Key="FnToggleButtonStyle" TargetType="{x:Type ToggleButton}">
+    <Setter Property="SnapsToDevicePixels" Value="True"/>
+    <Setter Property="OverridesDefaultStyle" Value="True"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type ToggleButton}">
+          <Border Name="FnBorder" CornerRadius="2" BorderThickness="1" BorderBrush="Transparent">
+            <ContentPresenter Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter TargetName="FnBorder" Property="BorderBrush" Value="{StaticResource fnButtonStroke}" />
+              <Setter TargetName="FnBorder" Property="Background" Value="{StaticResource fnButtonFill}" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+              <Setter TargetName="FnBorder" Property="Background" Value="{StaticResource fnButtonPressed}" />
+            </Trigger>
+            <Trigger Property="IsChecked" Value="True">
+              <Setter TargetName="FnBorder" Property="BorderBrush" Value="{StaticResource fnButtonStroke}" />
+              <Setter TargetName="FnBorder" Property="Background" Value="{StaticResource fnButtonPressed}" />
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Style x:Key="iButtonStyle" TargetType="{x:Type Button}">
+    <Setter Property="SnapsToDevicePixels" Value="True"/>
+    <Setter Property="OverridesDefaultStyle" Value="True"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type Button}">
+          <Border
+            Name="FnBorder" CornerRadius="2"
+            Background="{StaticResource fnButtonFill}"
+            BorderThickness="1" BorderBrush="{StaticResource fnButtonStroke}">
+            <ContentPresenter Margin="4,2,4,2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+          </Border>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+              <Setter TargetName="FnBorder" Property="BorderBrush" Value="{StaticResource fnButtonStroke}" />
+              <Setter TargetName="FnBorder" Property="Background" Value="{StaticResource ControlButtonHover}" />
+            </Trigger>
+            <Trigger Property="IsPressed" Value="True">
+              <Setter TargetName="FnBorder" Property="Background" Value="{StaticResource fnButtonPressed}" />
+            </Trigger>
+            <Trigger Property="IsEnabled" Value="False">
+              <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <!-- Hyperlink -->
+
+  <Pen x:Key="LinkUnderlinePen" Brush="Gray">
+    <Pen.DashStyle>
+      <DashStyle Dashes="3,4" />
+    </Pen.DashStyle>
+  </Pen>
+
+  <Style x:Key="LinkBlockStyle" TargetType="TextBlock">
+    <Setter Property="HorizontalAlignment" Value="Center"/>
+    <Setter Property="FontSize" Value="12"/>
+    <Setter Property="FontFamily" Value="Calibri"/>
+    <Setter Property="TextDecorations">
+      <Setter.Value>
+        <TextDecorationCollection>
+          <TextDecoration Pen="{StaticResource LinkUnderlinePen}" PenOffset="1" />
+        </TextDecorationCollection>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+  <Style TargetType="{x:Type Hyperlink}">
+    <Setter Property="Foreground" Value="Black" />
+    <Setter Property="Focusable" Value="False" />
+    <Setter Property="TextDecorations" Value="None" />
+  </Style>
+
+  <!-- TextBlock -->
+
+  <Style TargetType="{x:Type TextBlock}">
+    <Setter Property="FontSize" Value="12"/>
+    <Setter Property="FontFamily" Value="Calibri"/>
+  </Style>
+
+  <!-- TextBoxStyle -->
+
+  <LinearGradientBrush x:Key="TextBoxBorder" EndPoint="0,20" StartPoint="0,0" MappingMode="Absolute">
+    <GradientStop Color="#ABADB3" Offset="0.05"/>
+    <GradientStop Color="#E2E3EA" Offset="0.07"/>
+    <GradientStop Color="#E3E9EF" Offset="1"/>
+  </LinearGradientBrush>
+
+  <Style x:Key="TextBoxStyle" BasedOn="{x:Null}" TargetType="{x:Type TextBox}">
+    <Setter Property="OverridesDefaultStyle" Value="True"/>
+    <Setter Property="Padding" Value="1"/>
+    <Setter Property="Background" Value="Transparent"/>
+    <Setter Property="AllowDrop" Value="true"/>
+    <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="{x:Type TextBox}">
+          <Microsoft_Windows_Themes:ListBoxChrome x:Name="Bd" SnapsToDevicePixels="true" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" RenderFocused="{TemplateBinding IsKeyboardFocusWithin}" RenderMouseOver="{TemplateBinding IsMouseOver}">
+            <Border
+              x:Name="border" CornerRadius="3" BorderThickness="1"
+              BorderBrush="{StaticResource TextBoxBorder}" ForceCursor="False"
+              Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
+              <ScrollViewer
+                x:Name="PART_ContentHost"
+                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+            </Border>
+          </Microsoft_Windows_Themes:ListBoxChrome>
+          <ControlTemplate.Triggers>
+            <Trigger Property="IsEnabled" Value="false">
+              <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+              <Setter Property="Background" TargetName="Bd" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"/>
+              <Setter Property="Background" Value="Transparent"/>
+            </Trigger>
+          </ControlTemplate.Triggers>
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+
+</ResourceDictionary>
