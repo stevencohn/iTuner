@@ -1,7 +1,7 @@
 **Project Description**  
 A system tray app that adds seamless features to iTunes including automated library maintenance, playlist management, playlist sychronization with MP3 players, lyrics downloads, track and playback control, and global keyboard control.  C#, WPF, MusicBrainz, iTunes APIs, and more!
 
-[![Screenshot2](http://download.codeplex.com/Download?ProjectName=ituner&DownloadId=371129 "Screenshot2")](http://download.codeplex.com/Download?ProjectName=ituner&DownloadId=371128)
+[![Screenshot2](docs/Images/Screenshot.png "Screenshot2")](docs/Images/Screenshot.png)
 
 **From a gracious follower**
 
@@ -37,14 +37,10 @@ _"Thank you for all of your support for this wonderful tool. I love using it to 
 *   [See us on Facebook](http://www.facebook.com/#!/pages/ITuner-News/132318033496418) and please click the Like button!
 *   <span style="color:#ff0000; font-size:small">Translators Wanted! – _If you’d like to help translate this project, please see the [translation page](http://ituner.codeplex.com/wikipage?title=Translation&referringTitle=Documentation)._</span>
 
-**My Other Projects**
-
-Like iTuner?  Why not take a look at my other projects?
-
-*   [CookieChipper](http://cookiechipper.codeplex.com "CookieChipper")
-*   Scout (soon to come...)
+**Please help**
 
 I welcome feature suggestions and promise to address defects in a timely manner.  
+
 If you enjoy the iTuner application, please consider [donating](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6UC9PK9LA92F8&lc=US&item_name=Support%20iTuner&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)  to support continual improvements. Thanks!
 
 [![Donate](http://download.codeplex.com/download?ProjectName=ituner&DownloadId=166252 "Donate")](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6UC9PK9LA92F8&lc=US&item_name=Support%20iTuner&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) [![Donate-de](http://download.codeplex.com/download?ProjectName=ituner&DownloadId=166130 "Donate-de")](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6UC9PK9LA92F8&lc=US&item_name=Support%20iTuner&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) [ ![Donate-es](http://download.codeplex.com/download?ProjectName=ituner&DownloadId=166131 "Donate-es")](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6UC9PK9LA92F8&lc=US&item_name=Support%20iTuner&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) [ ![Donate-fr](http://download.codeplex.com/download?ProjectName=ituner&DownloadId=166366 "Donate-fr")](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6UC9PK9LA92F8&lc=US&item_name=Support%20iTuner&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) [ ![Donate-he](http://download.codeplex.com/download?ProjectName=ituner&DownloadId=166133 "Donate-he")](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6UC9PK9LA92F8&lc=US&item_name=Support%20iTuner&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) [ ![Donate-it](http://download.codeplex.com/download?ProjectName=ituner&DownloadId=166134 "Donate-it")](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6UC9PK9LA92F8&lc=US&item_name=Support%20iTuner&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) [ ![Donate-ja](http://download.codeplex.com/download?ProjectName=ituner&DownloadId=166135 "Donate-ja")](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6UC9PK9LA92F8&lc=US&item_name=Support%20iTuner&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) [ ![Donate-pt](http://download.codeplex.com/download?ProjectName=ituner&DownloadId=166136 "Donate-pt")](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6UC9PK9LA92F8&lc=US&item_name=Support%20iTuner&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted) [ ![Donate-zh](http://download.codeplex.com/download?ProjectName=ituner&DownloadId=166137 "Donate-zh")](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6UC9PK9LA92F8&lc=US&item_name=Support%20iTuner&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted)  
