@@ -1,12 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{302AAC69-739F-4654-9C11-B038336B77F3}"
 	ProjectSection(SolutionItems) = preProject
 		iTuner.vsmdi = iTuner.vsmdi
-		iTuner2.vsmdi = iTuner2.vsmdi
 		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
 	EndProjectSection
 EndProject
@@ -90,23 +89,8 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs06
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = iTuner\\iTuner.csproj
-		SccProjectName1 = iTuner
-		SccLocalPath1 = iTuner
-		SccProjectUniqueName2 = iTunerTests\\iTunerTests.csproj
-		SccProjectName2 = iTunerTests
-		SccLocalPath2 = iTunerTests
-		SccProjectUniqueName3 = iTunerPseudolator\\iTunerPseudolator.csproj
-		SccProjectName3 = iTunerPseudolator
-		SccLocalPath3 = iTunerPseudolator
-		SccProjectUniqueName4 = iTunerSetup\\iTunerSetup.wixproj
-		SccProjectName4 = iTunerSetup
-		SccLocalPath4 = iTunerSetup
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7255ACD4-B37D-48DA-AB8B-73B6FEBBFD9C}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = iTuner2.vsmdi

@@ -225,11 +225,19 @@ namespace iTuner
 			}
 
 			string path = @"HKEY_LOCAL_MACHINE\SOFTWARE\Apple Computer, Inc.\iTunes";
-			string folder = Registry.GetValue(path, "ProgramFolder", "") as string;
+			string folder = Registry.GetValue(path, "InstallDir", "") as string;
 			if (String.IsNullOrEmpty(folder))
 			{
-				path = @"HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Apple Computer, Inc.\iTunes";
 				folder = Registry.GetValue(path, "ProgramFolder", "") as string;
+				if (string.IsNullOrEmpty(folder))
+				{
+					path = @"HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Apple Computer, Inc.\iTunes";
+					folder = Registry.GetValue(path, "InstallDir", "") as string;
+					if (string.IsNullOrEmpty(folder))
+					{
+						folder = Registry.GetValue(path, "ProgramFolder", "") as string;
+					}
+				}
 			}
 
 			if (String.IsNullOrEmpty(folder))
